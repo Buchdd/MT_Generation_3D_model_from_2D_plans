@@ -1,0 +1,197 @@
+{
+  "Uuid": "8c0a451e-dbe4-41ec-a370-c952f448e72c",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "DownloadData6",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.Directory, CoreNodeModels",
+      "Id": "897f469f5b834862b78d5a12268c9373",
+      "NodeType": "ExtensionNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2dc8ead8c7164bf08ab4db5d5abbb8ae",
+          "Name": "",
+          "Description": "Путь к каталогу",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Возможность выбрать каталог в системе и возврат пути к нему",
+      "HintPath": "D:\\RevitData\\TrainFromBase",
+      "InputValue": "D:\\RevitData\\TrainFromBase"
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "Code": "import clr\r\nclr.AddReference('RevitAPI')\r\nclr.AddReference('RevitAPIUI')\r\nclr.AddReference('RevitNodes')\r\nclr.AddReference('RevitServices')\r\n\r\nfrom Autodesk.Revit.DB import *\r\nfrom Autodesk.Revit.UI import *\r\nfrom System.Collections.Generic import List\r\nimport os\r\n\r\ntry:\r\n    doc = __revit__.ActiveUIDocument.Document\r\nexcept:\r\n    from RevitServices.Persistence import DocumentManager\r\n    doc = DocumentManager.Instance.CurrentDBDocument\r\n\r\ndir_path = IN[0]\r\nif not dir_path or not os.path.isdir(dir_path):\r\n    OUT = \"❌ Укажите существующую папку\"\r\nelse:\r\n    report = []\r\n    stats = {\"fam_ok\": 0, \"sys_ok\": 0, \"err\": 0}\r\n    \r\n    vft_3d = None\r\n    for ft in FilteredElementCollector(doc).OfClass(ViewFamilyType):\r\n        if ft.ViewFamily == ViewFamily.ThreeDimensional:\r\n            vft_3d = ft\r\n            break\r\n\r\n    if vft_3d is None:\r\n        OUT = \"❌ В проекте нет типа 3D вида!\"\r\n    else:\r\n        dxf_opts = DXFExportOptions()\r\n\r\n        # ==========================================\r\n        # ЧАСТЬ 1: Загружаемые семейства\r\n        # ==========================================\r\n        families = FilteredElementCollector(doc).OfClass(Family).ToElements()\r\n        for fam in families:\r\n            try:\r\n                if not fam.IsEditable: continue\r\n                safe_name = \"\".join(c for c in fam.Name if c not in r'<>:\"/\\|?*').strip() or \"Fam_\" + str(fam.Id.IntegerValue)\r\n                fam_doc = doc.EditFamily(fam)\r\n                if fam_doc is None: continue\r\n\r\n                view_for_export = None\r\n                for v in FilteredElementCollector(fam_doc).OfClass(View):\r\n                    if v.ViewType == ViewType.ThreeD and not v.IsTemplate:\r\n                        view_for_export = v; break\r\n\r\n                if view_for_export is None:\r\n                    t = Transaction(fam_doc, \"Temp3D\")\r\n                    t.Start()\r\n                    try:\r\n                        view_for_export = View3D.CreateIsometric(fam_doc, vft_3d.Id)\r\n                        t.Commit()\r\n                    except: t.RollBack()\r\n\r\n                if view_for_export:\r\n                    fam_doc.Export(dir_path, safe_name, List[ElementId]([view_for_export.Id]), dxf_opts)\r\n                    stats[\"fam_ok\"] += 1\r\n                fam_doc.Close(False)\r\n            except: pass\r\n\r\n        # ==========================================\r\n        # ЧАСТЬ 2: Системные семейства\r\n        # ==========================================\r\n        target_cats_int = [\r\n            int(BuiltInCategory.OST_Walls), int(BuiltInCategory.OST_Floors),\r\n            int(BuiltInCategory.OST_Roofs), int(BuiltInCategory.OST_Ceilings),\r\n            int(BuiltInCategory.OST_Topography), int(BuiltInCategory.OST_StructuralColumns),\r\n            int(BuiltInCategory.OST_Columns), int(BuiltInCategory.OST_StructuralFraming)\r\n        ]\r\n\r\n        # Собираем все элементы и группируем по категориям\r\n        all_sys_elements = []\r\n        cat_ids_map = {}\r\n        \r\n        for e in FilteredElementCollector(doc).WhereElementIsNotElementType():\r\n            cat = e.Category\r\n            if cat and cat.Id.IntegerValue in target_cats_int:\r\n                all_sys_elements.append(e)\r\n                c_int = cat.Id.IntegerValue\r\n                if c_int not in cat_ids_map: cat_ids_map[c_int] = List[ElementId]()\r\n                cat_ids_map[c_int].Add(e.Id)\r\n                \r\n        report.append(\"📊 Найдено целевых экземпляров: {}\".format(len(all_sys_elements)))\r\n\r\n        # Кэшируем IDs всех модельных категорий\r\n        all_model_cat_ids = []\r\n        for cat in doc.Settings.Categories:\r\n            try:\r\n                if cat.CategoryType == CategoryType.Model:\r\n                    all_model_cat_ids.append(cat.Id)\r\n            except: pass\r\n\r\n        # Список аннотационных категорий для скрытия\r\n        annotation_cats_to_hide = [\r\n            BuiltInCategory.OST_Dimensions,\r\n            BuiltInCategory.OST_TextNotes,\r\n            BuiltInCategory.OST_GenericAnnotation,\r\n            BuiltInCategory.OST_Grids,\r\n            BuiltInCategory.OST_Levels,\r\n            BuiltInCategory.OST_SpotElevations,\r\n            BuiltInCategory.OST_SpotCoordinates,\r\n            BuiltInCategory.OST_Sections,\r\n            BuiltInCategory.OST_Callouts,\r\n            BuiltInCategory.OST_DetailComponents,\r\n            BuiltInCategory.OST_Lines,\r\n            BuiltInCategory.OST_ReferenceLines,\r\n            BuiltInCategory.OST_SketchLines,\r\n            BuiltInCategory.OST_Areas,\r\n            BuiltInCategory.OST_Rooms,\r\n            BuiltInCategory.OST_Cameras,\r\n            BuiltInCategory.OST_Furniture,\r\n            BuiltInCategory.OST_FurnitureSystems,\r\n            BuiltInCategory.OST_PlumbingFixtures,\r\n            BuiltInCategory.OST_MechanicalEquipment,\r\n            BuiltInCategory.OST_ElectricalEquipment,\r\n            BuiltInCategory.OST_SpecialityEquipment,\r\n            BuiltInCategory.OST_Casework,\r\n            BuiltInCategory.OST_Entourage,\r\n            BuiltInCategory.OST_Roads,\r\n            BuiltInCategory.OST_Site,\r\n            BuiltInCategory.OST_Parking,\r\n            BuiltInCategory.OST_Planting,\r\n            BuiltInCategory.OST_Railings,\r\n            BuiltInCategory.OST_Stairs,\r\n            BuiltInCategory.OST_StairsSupports,\r\n            BuiltInCategory.OST_StairsLandings,\r\n            BuiltInCategory.OST_Ramps\r\n        ]\r\n        \r\n        annotation_cat_ids = [ElementId(int(cat)) for cat in annotation_cats_to_hide]\r\n\r\n        # ЦИКЛ ЭКСПОРТА\r\n        for elem in all_sys_elements:\r\n            temp_view = None\r\n            tx = None\r\n            try:\r\n                cat_name = elem.Category.Name\r\n                type_name = \"Unknown\"\r\n                try:\r\n                    # Получаем имя типа системного семейства\r\n                    type_id = elem.GetTypeId()\r\n                    if type_id != ElementId.InvalidElementId:\r\n                        type_elem = doc.GetElement(type_id)\r\n                        if type_elem:\r\n                            type_name = type_elem.Name\r\n                            # Если имя пустое, пробуем через параметр\r\n                            if not type_name or type_name == \"\":\r\n                                type_param = type_elem.LookupParameter(\"Type\")\r\n                                if type_param:\r\n                                    type_name = type_param.AsString()\r\n                except:\r\n                    pass\r\n                \r\n                # Если не получилось, используем ID типа\r\n                if not type_name or type_name == \"Unknown\" or type_name == \"\":\r\n                    try:\r\n                        type_id = elem.GetTypeId()\r\n                        if type_id != ElementId.InvalidElementId:\r\n                            type_name = \"Type_\" + str(type_id.IntegerValue)\r\n                    except:\r\n                        pass\r\n\r\n                # 🔥 ИМЯ ФАЙЛА БЕЗ ID ЭЛЕМЕНТА\r\n                safe_name = \"\".join(c for c in (cat_name + \"_\" + type_name) if c not in r'<>:\"/\\|?*').strip()\r\n\r\n                tx = Transaction(doc, \"Setup_\" + str(elem.Id))\r\n                tx.Start()\r\n                \r\n                temp_view = View3D.CreateIsometric(doc, vft_3d.Id)\r\n                temp_view.Name = \"Temp_\" + str(elem.Id)\r\n                temp_view.DetailLevel = ViewDetailLevel.Fine\r\n                temp_view.CropBoxActive = False\r\n                temp_view.CropBoxVisible = False\r\n\r\n                # Скрываем ВСЕ аннотации\r\n                for cat_id in annotation_cat_ids:\r\n                    try: temp_view.SetCategoryHidden(cat_id, True)\r\n                    except: pass\r\n\r\n                # Скрываем ВСЕ модельные категории\r\n                for cat_id in all_model_cat_ids:\r\n                    try: temp_view.SetCategoryHidden(cat_id, True)\r\n                    except: pass\r\n\r\n                # Включаем ТОЛЬКО категорию целевого элемента\r\n                target_cat_id = elem.Category.Id\r\n                try: temp_view.SetCategoryHidden(target_cat_id, False)\r\n                except: pass\r\n\r\n                # Скрываем ВСЕ элементы этой категории\r\n                all_ids_in_cat = cat_ids_map[target_cat_id.IntegerValue]\r\n                temp_view.HideElements(all_ids_in_cat)\r\n\r\n                # Показываем ТОЛЬКО один целевой элемент\r\n                temp_view.UnhideElements(List[ElementId]([elem.Id]))\r\n                \r\n                tx.Commit()\r\n\r\n                # Экспорт\r\n                doc.Export(dir_path, safe_name, List[ElementId]([temp_view.Id]), dxf_opts)\r\n                stats[\"sys_ok\"] += 1\r\n\r\n            except Exception as ex:\r\n                if tx and tx.HasStarted():\r\n                    try: tx.RollBack()\r\n                    except: pass\r\n                report.append(\"❌ Ошибка {}: {}\".format(elem.Id, str(ex)[:80]))\r\n                stats[\"err\"] += 1\r\n            finally:\r\n                if temp_view:\r\n                    try:\r\n                        tx2 = Transaction(doc, \"Del_\" + str(elem.Id))\r\n                        tx2.Start()\r\n                        doc.Delete(temp_view.Id)\r\n                        tx2.Commit()\r\n                    except: pass\r\n\r\n        summary = [\r\n            \"=\"*50,\r\n            \" СТАТИСТИКА:\",\r\n            \" ✅ Загружаемые семейства: {}\".format(stats[\"fam_ok\"]),\r\n            \" ✅ Системные объекты: {}\".format(stats[\"sys_ok\"]),\r\n            \"  Ошибок: {}\".format(stats[\"err\"]),\r\n            \"=\"*50\r\n        ]\r\n        OUT = summary + report",
+      "Engine": "CPython3",
+      "EngineName": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "d8c49321ebe84e12bf7f52140a3382d3",
+      "NodeType": "PythonScriptNode",
+      "Inputs": [
+        {
+          "Id": "d077f43d26cd4060bcb6ffb0b16b501a",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8248bf3a12e5470d9dce65e8e196ed33",
+          "Name": "OUT",
+          "Description": "Результат сценария Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Выполнение встроенного сценария Python."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "WatchWidth": 409.6,
+      "WatchHeight": 231.2,
+      "Id": "1b726183e22240c89b1ef083e0bc794b",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "4541595a74f54af1b27cc26e8981d7f4",
+          "Name": "",
+          "Description": "Узел для отображения выходных данных",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3d38387bb5d64d719e14daa10c49a89a",
+          "Name": "",
+          "Description": "Выходные данные узла",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Визуализация выходных данных узла"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "2dc8ead8c7164bf08ab4db5d5abbb8ae",
+      "End": "d077f43d26cd4060bcb6ffb0b16b501a",
+      "Id": "eb591b8375394f49856a9fe8cf56d99b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "8248bf3a12e5470d9dce65e8e196ed33",
+      "End": "4541595a74f54af1b27cc26e8981d7f4",
+      "Id": "24937b36ba6940089f54c4f6f7bc4ce9",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Свойства",
+      "Version": "2.19",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "6.1",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "Нет",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.19.3.6394",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "_Фоновый просмотр",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Id": "897f469f5b834862b78d5a12268c9373",
+        "Name": "Directory Path",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 108.0,
+        "Y": -197.60000000000002
+      },
+      {
+        "Id": "d8c49321ebe84e12bf7f52140a3382d3",
+        "Name": "Python Script",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 398.40757477982339,
+        "Y": -201.5055649521592
+      },
+      {
+        "Id": "1b726183e22240c89b1ef083e0bc794b",
+        "Name": "Watch",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 77.317844481742213,
+        "Y": -39.194981354238166
+      }
+    ],
+    "Annotations": [],
+    "X": -28.349383110407075,
+    "Y": 344.16475735316629,
+    "Zoom": 0.84292396872278819
+  }
+}

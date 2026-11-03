@@ -1,0 +1,9 @@
+{
+    "python.analysis.extraPaths": [
+        "C:\\Users\\Acer\\AppData\\Roaming\\RevitAPI stubs\\RVT 25",
+        "C:\\Users\\Acer\\AppData\\Roaming\\pyRevit-Master\\pyrevitlib",
+        "C:\\Program Files\\pyRevit-Master\\pyrevitlib",
+        "C:\\Users\\Acer\\AppData\\Roaming\\RevitAPI stubs\\ironpython-stubs\\release\\stubs.min",
+        "./evaluation"
+    ]
+}

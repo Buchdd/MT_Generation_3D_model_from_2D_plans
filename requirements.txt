@@ -1,0 +1,6 @@
+ezdxf
+pandas
+numpy
+torch
+torch_geometric
+tqdm

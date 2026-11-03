@@ -1,0 +1,6174 @@
+{
+  "source_dxf": "C:\\Users\\Acer\\Desktop\\Севкав\\Generation3DFrom2DLib_06\\data\\processed\\pred_raw\\ExampleDWG1.dxf",
+  "total": 271,
+  "by_method": {
+    "wall": 146,
+    "door": 12,
+    "window": 58,
+    "stair": 55
+  },
+  "level_name": "Level 1",
+  "commands": [
+    {
+      "id": "wall_0",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          71.35826771653544,
+          165.83474880374516,
+          0.0
+        ],
+        "end": [
+          66.03783923807478,
+          162.11012381767648,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_1",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          75.45931758530183,
+          130.2376359428505,
+          0.0
+        ],
+        "end": [
+          96.78477690288713,
+          130.2376359428505,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_2",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          96.78477690288713,
+          133.5184758378636,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          133.5184758378636,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_3",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          75.45931758530183,
+          128.59721599534774,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          128.59721599534774,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_4",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          78.74015748031496,
+          132.6982658641126,
+          0.0
+        ],
+        "end": [
+          75.45931758530183,
+          127.77700602159294,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_5",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          93.50393700787401,
+          127.77700602159294,
+          0.0
+        ],
+        "end": [
+          96.78477690288713,
+          127.77700602159294,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_6",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          88.58267716535433,
+          127.77700602159294,
+          0.0
+        ],
+        "end": [
+          85.30183727034121,
+          132.6982658641126,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_7",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          129.59317585301838,
+          126.1365860740879,
+          0.0
+        ],
+        "end": [
+          124.67191601049869,
+          126.1365860740879,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_8",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          75.45931758530183,
+          136.79931573287675,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          136.79931573287675,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_9",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          96.78477690288713,
+          123.67595615282806,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          123.67595615282806,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_10",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          119.750656167979,
+          126.95679604783737,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          126.95679604783737,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_11",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          82.02099737532808,
+          118.75469631030838,
+          0.0
+        ],
+        "end": [
+          82.02099737532808,
+          136.79931573287675,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_12",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          119.750656167979,
+          128.59721599534774,
+          0.0
+        ],
+        "end": [
+          119.750656167979,
+          118.75469631030838,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_13",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          63.412786589286426,
+          181.46707919825772,
+          0.0
+        ],
+        "end": [
+          64.72512254729168,
+          179.97348706766576,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_14",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          63.412786589286426,
+          171.2964755237132,
+          0.0
+        ],
+        "end": [
+          63.412786589286426,
+          169.62162722053762,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_15",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          63.412786589286426,
+          161.1086576713403,
+          0.0
+        ],
+        "end": [
+          64.72512254729168,
+          163.4052455978472,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_16",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          64.72512254729168,
+          158.50119993316432,
+          0.0
+        ],
+        "end": [
+          67.350555928864,
+          161.45395583867383,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 2.625433,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_17",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.43115929269545,
+          170.31271281803402,
+          0.0
+        ],
+        "end": [
+          40.11882333469325,
+          170.31271281803402,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_18",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.43115929269545,
+          164.60323515918603,
+          0.0
+        ],
+        "end": [
+          40.11882333469325,
+          164.60323515918603,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_19",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.43115929269545,
+          158.86127608008985,
+          0.0
+        ],
+        "end": [
+          40.1188233346902,
+          158.20510810108723,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_20",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          108.3602931509601,
+          176.2177353662352,
+          0.0
+        ],
+        "end": [
+          107.04795719295485,
+          176.2177353662352,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.855923,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_21",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          106.55583120870288,
+          162.11012381767648,
+          0.0
+        ],
+        "end": [
+          107.21199918770552,
+          160.79778785967122,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_22",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          92.61285403502,
+          162.11012381767648,
+          0.0
+        ],
+        "end": [
+          92.61285403502,
+          160.79778785967122,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_23",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          78.55483581769718,
+          162.11012381768944,
+          0.0
+        ],
+        "end": [
+          78.55483581769718,
+          160.7977878596842,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_24",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          98.20544913949523,
+          190.32534691479316,
+          0.0
+        ],
+        "end": [
+          98.86161711850092,
+          191.6376828727984,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_25",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          81.37345225795592,
+          190.32534691478932,
+          0.0
+        ],
+        "end": [
+          81.37345225795286,
+          191.6376828727984,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_26",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          71.99154884124228,
+          190.32534691479162,
+          0.0
+        ],
+        "end": [
+          71.99154884124228,
+          191.6376828727984,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_27",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          67.2526775597041,
+          190.32534691478932,
+          0.0
+        ],
+        "end": [
+          64.72512254728862,
+          190.32534691479316,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_28",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          57.457964048632896,
+          190.32534691479316,
+          0.0
+        ],
+        "end": [
+          59.37790953384326,
+          191.6376828727984,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_29",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.29951161473288,
+          190.32534691479316,
+          0.0
+        ],
+        "end": [
+          40.643343635730254,
+          191.6376828727984,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_30",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          66.03783923807478,
+          160.79778785967122,
+          0.0
+        ],
+        "end": [
+          64.068954568286,
+          164.70036737801794,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_31",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          59.34497185186801,
+          157.5169479646619,
+          0.0
+        ],
+        "end": [
+          60.001139830870635,
+          156.20461200665667,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_32",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          45.565444292809836,
+          157.5169479646619,
+          0.0
+        ],
+        "end": [
+          44.90927631380721,
+          156.20461200665667,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_33",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          60.09853174516398,
+          171.2964755237132,
+          0.0
+        ],
+        "end": [
+          60.09853174516704,
+          172.60881148171845,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_34",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          44.186458254350335,
+          171.29647552371551,
+          0.0
+        ],
+        "end": [
+          41.88955437688076,
+          172.60881148172075,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_35",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          37.82191945722062,
+          171.29647552371702,
+          0.0
+        ],
+        "end": [
+          40.77499131369282,
+          169.32895011235556,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.967525,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_36",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          63.412786589280316,
+          169.62162722053762,
+          0.0
+        ],
+        "end": [
+          64.72512254729168,
+          169.62162722053762,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_37",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          56.78427690104765,
+          171.2964755237132,
+          0.0
+        ],
+        "end": [
+          56.78427690104765,
+          172.60881148171845,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_38",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          46.94175721600828,
+          171.2964755237132,
+          0.0
+        ],
+        "end": [
+          46.94175721600828,
+          172.60881148171845,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_39",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          35.525015579748,
+          189.9972629252903,
+          0.0
+        ],
+        "end": [
+          36.83735153775325,
+          188.68492696728657,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.855923,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_40",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          34.868847600745376,
+          187.04450701978,
+          0.0
+        ],
+        "end": [
+          33.556511642740126,
+          188.35684297778144,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.855923,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_41",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          31.588007705732252,
+          188.35684297778144,
+          0.0
+        ],
+        "end": [
+          31.588007705732252,
+          187.04450701978,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_42",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          31.588007705732252,
+          176.5458193557365,
+          0.0
+        ],
+        "end": [
+          35.525015579748,
+          173.59306345022623,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_43",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          34.868847600745376,
+          177.20198733474066,
+          0.0
+        ],
+        "end": [
+          33.556511642740126,
+          175.8896513767354,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.855923,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_44",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          36.83735153775325,
+          172.60881148172228,
+          0.0
+        ],
+        "end": [
+          36.83735153775325,
+          177.20198733474066,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_45",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          40.77499131369282,
+          165.39194223833982,
+          0.0
+        ],
+        "end": [
+          40.77499131369282,
+          163.81452808003223,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.577414,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_46",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          94.58076559190805,
+          161.45395583867383,
+          0.0
+        ],
+        "end": [
+          90.64494247813195,
+          161.45395583867767,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_47",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          106.06370522445398,
+          160.79778785967122,
+          0.0
+        ],
+        "end": [
+          106.06370522445398,
+          162.11012381767648,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_48",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          55.27715711444959,
+          156.8607799856593,
+          0.0
+        ],
+        "end": [
+          49.69972929292727,
+          156.8607799856593,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_49",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          31.588007705726138,
+          187.04450701978,
+          0.0
+        ],
+        "end": [
+          32.9003436637375,
+          187.04450701978,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_50",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          31.588007705726138,
+          177.20198733474066,
+          0.0
+        ],
+        "end": [
+          32.9003436637375,
+          177.20198733474066,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_51",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          91.9560936758945,
+          173.265543165813,
+          0.0
+        ],
+        "end": [
+          93.26842963389974,
+          173.265543165813,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_52",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          91.9560936758945,
+          189.01357466187676,
+          0.0
+        ],
+        "end": [
+          93.26842963389974,
+          189.01357466187676,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_53",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          73.94170621202237,
+          190.98151489379578,
+          0.0
+        ],
+        "end": [
+          70.0413914704622,
+          190.98151489379578,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_54",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          78.07556447973279,
+          190.32534691479316,
+          0.0
+        ],
+        "end": [
+          78.07556447973279,
+          191.6376828727984,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_55",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          84.67134003617295,
+          190.98151489379578,
+          0.0
+        ],
+        "end": [
+          89.36294108604172,
+          190.98151489379578,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_56",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          86.70793460412231,
+          160.79778785967122,
+          0.0
+        ],
+        "end": [
+          86.70793460412231,
+          162.11012381767648,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_57",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          45.76167169171251,
+          190.98151489379578,
+          0.0
+        ],
+        "end": [
+          51.503141507985475,
+          190.98151489379578,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_58",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          67.2526775597041,
+          190.32534691478932,
+          0.0
+        ],
+        "end": [
+          67.2526775597041,
+          191.6376828727984,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_59",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          92.61226165489711,
+          187.70180240895962,
+          0.0
+        ],
+        "end": [
+          92.61226165489711,
+          184.42096251394955,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_60",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.43115929269545,
+          160.2056041955178,
+          0.0
+        ],
+        "end": [
+          40.1188233346902,
+          160.2056041955178,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_61",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          75.27302280975276,
+          173.92114743973517,
+          0.0
+        ],
+        "end": [
+          75.27302280975276,
+          172.60881148172993,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_62",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          86.42787845279737,
+          173.92114743973517,
+          0.0
+        ],
+        "end": [
+          86.42721621316596,
+          172.60881148172993,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_63",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          72.59913829532317,
+          173.2649794607249,
+          0.0
+        ],
+        "end": [
+          77.94690732418846,
+          173.26497946072948,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_64",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          80.89966322970332,
+          173.92114743972752,
+          0.0
+        ],
+        "end": [
+          80.89966322970027,
+          172.60881148172228,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_65",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          71.35826771653544,
+          48.72047304443839,
+          0.0
+        ],
+        "end": [
+          73.68257692623627,
+          46.10259590789326,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_66",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          75.45931758530183,
+          13.123360183546009,
+          0.0
+        ],
+        "end": [
+          96.78477690288713,
+          13.123360183546009,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_67",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          96.78477690288713,
+          16.40420007856295,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          16.40420007856295,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_68",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          75.45931758530183,
+          11.482940236043266,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          11.482940236043266,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_69",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          78.74015748031496,
+          15.583990104808143,
+          0.0
+        ],
+        "end": [
+          75.45931758530183,
+          10.662730262286166,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_70",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          93.50393700787401,
+          10.662730262286166,
+          0.0
+        ],
+        "end": [
+          96.78477690288713,
+          10.662730262286166,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_71",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          88.58267716535433,
+          10.662730262286166,
+          0.0
+        ],
+        "end": [
+          85.30183727034121,
+          15.583990104808143,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_72",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          129.59317585301838,
+          9.022310314781896,
+          0.0
+        ],
+        "end": [
+          124.67191601049869,
+          9.022310314781896,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_73",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          75.45931758530183,
+          19.685039973572255,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          19.685039973572255,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_74",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          96.78477690288713,
+          6.561680393519761,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          6.561680393519761,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_75",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          119.750656167979,
+          9.842520288532885,
+          0.0
+        ],
+        "end": [
+          136.1548556430446,
+          9.842520288532885,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_76",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          82.02099737532808,
+          1.6404205510000762,
+          0.0
+        ],
+        "end": [
+          82.02099737532808,
+          19.685039973572255,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_77",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          119.750656167979,
+          11.482940236043266,
+          0.0
+        ],
+        "end": [
+          119.750656167979,
+          1.6404205510000762,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_78",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          63.31436139243298,
+          66.78829144595406,
+          0.0
+        ],
+        "end": [
+          64.79073934519194,
+          66.83750404437772,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.476378,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_79",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          63.47840338718363,
+          55.8302861966087,
+          0.0
+        ],
+        "end": [
+          63.47840338718669,
+          54.59997123597725,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.164042,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_80",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          63.412786589286426,
+          45.24957753519138,
+          0.0
+        ],
+        "end": [
+          64.79073934518888,
+          47.57897386065069,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.377953,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_81",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          64.72512254729168,
+          56.33881638033726,
+          0.0
+        ],
+        "end": [
+          64.72512254729168,
+          53.878186459074364,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_82",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          64.79073934519194,
+          46.10259590789326,
+          0.0
+        ],
+        "end": [
+          66.23468963177862,
+          46.10259590789326,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.164042,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_83",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.43115929269545,
+          53.40246467429899,
+          0.0
+        ],
+        "end": [
+          40.11882333469325,
+          52.746296695296365,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_84",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.43115929269545,
+          43.87162477928434,
+          0.0
+        ],
+        "end": [
+          40.1188233346902,
+          43.21545680028324,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_85",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          108.3602931509601,
+          71.85718908374781,
+          0.0
+        ],
+        "end": [
+          106.91672359715433,
+          71.20102110474213,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.44357,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_86",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          108.36029315095399,
+          58.99629669529484,
+          0.0
+        ],
+        "end": [
+          106.91672359714822,
+          58.99629669529178,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.44357,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_87",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          108.36029315095399,
+          48.120312443326334,
+          0.0
+        ],
+        "end": [
+          106.91672359714822,
+          48.7764804223259,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.44357,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_88",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          104.45609367589755,
+          46.03697910998994,
+          0.0
+        ],
+        "end": [
+          105.17787845280043,
+          44.72464315198775,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_89",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          95.86029315096316,
+          46.03697910998994,
+          0.0
+        ],
+        "end": [
+          94.54854957307775,
+          44.72464315198775,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_90",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          91.30051807701476,
+          46.10259590789326,
+          0.0
+        ],
+        "end": [
+          92.61226165489711,
+          49.64590299451049,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_91",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          107.638508374045,
+          51.515981734663384,
+          0.0
+        ],
+        "end": [
+          107.63850837403278,
+          55.190522417078085,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_92",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          107.63850837402667,
+          62.80207097350853,
+          0.0
+        ],
+        "end": [
+          107.63850837401445,
+          68.14984000237992,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_93",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          83.78777545021866,
+          46.10259590789326,
+          0.0
+        ],
+        "end": [
+          83.78777545021866,
+          44.72464315198775,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.377953,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_94",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          100.14178921395224,
+          74.25220220710739,
+          0.0
+        ],
+        "end": [
+          98.74743225857165,
+          75.56453816511416,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.950928,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_95",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          91.9560936758945,
+          74.25220220710891,
+          0.0
+        ],
+        "end": [
+          89.13457136618626,
+          74.25220220710891,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_96",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          81.40854561324977,
+          74.25220220710585,
+          0.0
+        ],
+        "end": [
+          81.40854561324977,
+          75.56453816511416,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_97",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          72.19003965489058,
+          74.25220220710585,
+          0.0
+        ],
+        "end": [
+          72.19003965489058,
+          75.56453816511416,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_98",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          67.3182943576013,
+          74.25220220710585,
+          0.0
+        ],
+        "end": [
+          64.79073934518888,
+          74.25220220710585,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_99",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          57.4087514502077,
+          74.15377701025852,
+          0.0
+        ],
+        "end": [
+          59.41071793279339,
+          75.56453816511416,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.410761,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_100",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          64.05255036881093,
+          59.422805881649595,
+          0.0
+        ],
+        "end": [
+          64.10176296723613,
+          56.33881638033726,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.084687,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_101",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.29951161473288,
+          74.15377701025852,
+          0.0
+        ],
+        "end": [
+          40.643343635730254,
+          75.56453816511416,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.410761,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_102",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          76.79937482649873,
+          44.72464315198775,
+          0.0
+        ],
+        "end": [
+          70.5657790259738,
+          44.72464315198775,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_103",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          66.20188123282544,
+          44.72464315198775,
+          0.0
+        ],
+        "end": [
+          64.10176296723613,
+          49.05535181340813,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_104",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          59.21373825606748,
+          41.443803256974626,
+          0.0
+        ],
+        "end": [
+          59.86990623506705,
+          40.13146729897243,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_105",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          45.59825269175997,
+          41.44380325697615,
+          0.0
+        ],
+        "end": [
+          44.94208471275734,
+          40.13146729897243,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_106",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          37.82191945722062,
+          55.223330816029744,
+          0.0
+        ],
+        "end": [
+          39.167063814176004,
+          56.53566677403499,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.855923,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_107",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          35.525015579748,
+          73.92411821760608,
+          0.0
+        ],
+        "end": [
+          36.83735153775325,
+          72.61178225960235,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.787681,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_108",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          34.868847600745376,
+          71.06978750894619,
+          0.0
+        ],
+        "end": [
+          33.58932004169026,
+          72.28369827009799,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.740083,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_109",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          31.653624503632514,
+          72.28369827009799,
+          0.0
+        ],
+        "end": [
+          31.653624503632514,
+          71.06978750894619,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_110",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          31.653624503632514,
+          60.37424945120035,
+          0.0
+        ],
+        "end": [
+          35.525015579748,
+          57.51991874253893,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_111",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          34.90165599969551,
+          60.931992233355636,
+          0.0
+        ],
+        "end": [
+          33.58932004169026,
+          59.81650666904812,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.672907,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_112",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          36.90296833565351,
+          56.53566677403499,
+          0.0
+        ],
+        "end": [
+          36.90296833565351,
+          60.931992233355636,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_113",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          67.6786399183653,
+          45.413619529940505,
+          0.0
+        ],
+        "end": [
+          70.5657790259738,
+          45.41361952994203,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 2.887139,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_114",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          76.79937482649873,
+          45.41361952994203,
+          0.0
+        ],
+        "end": [
+          80.44110710996024,
+          45.41361952994203,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_115",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          55.01468992284853,
+          40.78763527797353,
+          0.0
+        ],
+        "end": [
+          49.765346090827535,
+          40.78763527797353,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_116",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          31.653624503626403,
+          71.06978750894619,
+          0.0
+        ],
+        "end": [
+          32.9003436637375,
+          71.06978750894619,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_117",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          31.653624503626403,
+          60.931992233355636,
+          0.0
+        ],
+        "end": [
+          32.9003436637375,
+          60.931992233355636,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_118",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          91.8576684790441,
+          47.87424945120188,
+          0.0
+        ],
+        "end": [
+          93.36685483075013,
+          47.841441052251746,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.509186,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_119",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          91.9560936758945,
+          63.42543055356408,
+          0.0
+        ],
+        "end": [
+          93.36685483075013,
+          63.425430553565604,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.410761,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_120",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          98.35373147117008,
+          45.3808111309919,
+          0.0
+        ],
+        "end": [
+          101.9954637546377,
+          45.3808111309919,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_121",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          74.27307104141869,
+          74.90837018611,
+          0.0
+        ],
+        "end": [
+          78.21007891543138,
+          74.90837018611,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_122",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          84.60701231106815,
+          74.90837018611,
+          0.0
+        ],
+        "end": [
+          89.13457136618626,
+          74.90837018611154,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_123",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          87.13444379047402,
+          45.413619529940505,
+          0.0
+        ],
+        "end": [
+          90.74336767498541,
+          45.41361952994203,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_124",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          45.76167169171251,
+          74.85915758768634,
+          0.0
+        ],
+        "end": [
+          51.503141507985475,
+          74.85915758768634,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 3.28084,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_125",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          67.3182943576013,
+          74.90837018611,
+          0.0
+        ],
+        "end": [
+          70.10700826836246,
+          74.90837018611,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 2.788714,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_126",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          91.9560936758945,
+          52.5986589000223,
+          0.0
+        ],
+        "end": [
+          93.36685483075318,
+          52.5986589000223,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_127",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          41.43115929269545,
+          46.2994463015971,
+          0.0
+        ],
+        "end": [
+          40.1188233346902,
+          46.2994463015971,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_128",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          64.72512254728862,
+          44.72464315198775,
+          0.0
+        ],
+        "end": [
+          64.72512254729168,
+          40.13146729897243,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_129",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "стены",
+      "geometry": {
+        "start": [
+          106.91672359713905,
+          55.19052241707656,
+          0.0
+        ],
+        "end": [
+          108.36029315094788,
+          55.19052241707961,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "partition_0",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15946.506638801626,
+          4677.598293018242,
+          0.0
+        ],
+        "end": [
+          15946.900339589025,
+          4677.598293018242,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_1",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15974.06569391973,
+          4679.238712965748,
+          0.0
+        ],
+        "end": [
+          15974.06569391973,
+          4677.926377007743,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.312336,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_2",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15955.791415704502,
+          4666.131757585171,
+          0.0
+        ],
+        "end": [
+          15956.185116491903,
+          4666.131757585171,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_3",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15955.791415704502,
+          4659.5536735956675,
+          0.0
+        ],
+        "end": [
+          15956.185116491903,
+          4659.553673595669,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_4",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15955.988266098202,
+          4664.179657847638,
+          0.0
+        ],
+        "end": [
+          15955.988266098211,
+          4661.522177532677,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_5",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15946.572255599525,
+          4560.0159619588485,
+          0.0
+        ],
+        "end": [
+          15947.031573184828,
+          4560.212812352549,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.459318,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_6",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15926.362281846239,
+          4550.698376657013,
+          0.0
+        ],
+        "end": [
+          15926.362281846239,
+          4551.354544636014,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_7",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15948.130654549652,
+          4550.698376657011,
+          0.0
+        ],
+        "end": [
+          15947.900995757003,
+          4550.304675869609,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_8",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15954.003357961728,
+          4550.698376657011,
+          0.0
+        ],
+        "end": [
+          15954.561100743877,
+          4550.304675869609,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_9",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15956.61162567826,
+          4550.698376657011,
+          0.0
+        ],
+        "end": [
+          15962.878029877735,
+          4550.698376657011,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_10",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15959.892465573279,
+          4550.304675869609,
+          0.0
+        ],
+        "end": [
+          15965.863594182198,
+          4550.304675869609,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_11",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15949.229735914481,
+          4550.501526263311,
+          0.0
+        ],
+        "end": [
+          15952.182491819996,
+          4550.501526263311,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_12",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15956.939709667762,
+          4550.501526263311,
+          0.0
+        ],
+        "end": [
+          15959.892465573277,
+          4550.501526263311,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_13",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15936.237609930231,
+          4563.0999514601635,
+          0.0
+        ],
+        "end": [
+          15936.237609930231,
+          4559.5894527724995,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_14",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15935.25335796173,
+          4563.0999514601635,
+          0.0
+        ],
+        "end": [
+          15935.25335796173,
+          4559.5894527724995,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_15",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "перегородки",
+      "geometry": {
+        "start": [
+          15956.283541688761,
+          4550.698376657011,
+          0.0
+        ],
+        "end": [
+          15956.283541688761,
+          4569.727248048087,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "door_0",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          38.97052937143255,
+          168.23638875444198,
+          0.0
+        ],
+        "rotation": -136.4247170994786
+      },
+      "params": {
+        "width_ft": 3.170028
+      }
+    },
+    {
+      "id": "door_1",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          39.87276034256727,
+          165.81813584256528,
+          0.0
+        ],
+        "rotation": -60.00000000020279
+      },
+      "params": {
+        "width_ft": 1.968504
+      }
+    },
+    {
+      "id": "door_2",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          69.11789854016494,
+          159.8955568885556,
+          0.0
+        ],
+        "rotation": -144.90196666533993
+      },
+      "params": {
+        "width_ft": 3.138319
+      }
+    },
+    {
+      "id": "door_3",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          65.34028002760664,
+          165.7658513885789,
+          0.0
+        ],
+        "rotation": -119.9999999999519
+      },
+      "params": {
+        "width_ft": 2.46063
+      }
+    },
+    {
+      "id": "door_4",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          65.34028002760664,
+          168.55614320997512,
+          0.0
+        ],
+        "rotation": 119.99999999991633
+      },
+      "params": {
+        "width_ft": 2.46063
+      }
+    },
+    {
+      "id": "door_5",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          79.62108241701547,
+          171.87062250535732,
+          0.0
+        ],
+        "rotation": -150.00000000003394
+      },
+      "params": {
+        "width_ft": 2.952756
+      }
+    },
+    {
+      "id": "door_6",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          81.22774721919546,
+          167.2000521691021,
+          0.0
+        ],
+        "rotation": 119.645740908468
+      },
+      "params": {
+        "width_ft": 2.653136
+      }
+    },
+    {
+      "id": "door_7",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          91.13588370214121,
+          186.28115706154472,
+          0.0
+        ],
+        "rotation": -120.00000000001575
+      },
+      "params": {
+        "width_ft": 3.28084
+      }
+    },
+    {
+      "id": "door_8",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          65.49611992261976,
+          58.06220407160017,
+          0.0
+        ],
+        "rotation": -62.59629629106943
+      },
+      "params": {
+        "width_ft": 3.065158
+      }
+    },
+    {
+      "id": "door_9",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          76.99641050101108,
+          54.09144105226702,
+          0.0
+        ],
+        "rotation": -150.0000000000043
+      },
+      "params": {
+        "width_ft": 2.952756
+      }
+    },
+    {
+      "id": "door_10",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          84.70638425429193,
+          54.09144105226702,
+          0.0
+        ],
+        "rotation": -149.99999999997465
+      },
+      "params": {
+        "width_ft": 2.952756
+      }
+    },
+    {
+      "id": "door_11",
+      "method": "door",
+      "category": "Doors",
+      "layer": "двери",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          91.21790469951654,
+          51.48412008209886,
+          0.0
+        ],
+        "rotation": 56.4824222469371
+      },
+      "params": {
+        "width_ft": 2.673664
+      }
+    },
+    {
+      "id": "window_0",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          125.3163761003308,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_1",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          122.03553620531768,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_2",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          135.15889578537016,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_3",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          123.67595615282806,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_4",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          126.95679604783737,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_5",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          131.87805589035705,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_6",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          120.39511625781493,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_7",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          133.5184758378636,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_8",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          32.9003436637375,
+          182.12324717726034,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 9.84252,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_9",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          31.588007705732252,
+          182.12324717726034,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 9.84252,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_10",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          76.00863534588369,
+          191.6376828727984,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 4.133858,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_11",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          76.00863534588369,
+          190.32534691478932,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 4.133858,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_12",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          87.01714056110733,
+          191.6376828727984,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 4.691601,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_13",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          87.01714056110733,
+          190.32534691479162,
+          0.0
+        ],
+        "rotation": 4.6644102177206834e-11
+      },
+      "params": {
+        "width_ft": 4.691601,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_14",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          52.488443203688426,
+          157.5169479646619,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 5.577428,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_15",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          52.488443203688426,
+          156.20461200665667,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 5.577428,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_16",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          88.67643854112714,
+          162.11012381767648,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.937008,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_17",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          88.67643854112714,
+          160.79778785967122,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.937008,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_18",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          48.63240659984899,
+          191.6376828727984,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 5.74147,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_19",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          48.63240659984899,
+          190.32534691478932,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 5.74147,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_20",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          68.64703451508163,
+          191.63768287279686,
+          0.0
+        ],
+        "rotation": 7.847184248644572e-11
+      },
+      "params": {
+        "width_ft": 2.788714,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_21",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          68.64703451508163,
+          190.32534691478932,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 2.788714,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_22",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          40.1188233346902,
+          162.010066137775,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 3.608924,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_23",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          41.43115929269545,
+          162.010066137775,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 3.608924,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_24",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          8.202100341026323,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_25",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          4.921260446017019,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_26",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          18.044620026065694,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_27",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          6.561680393519761,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_28",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          9.842520288532885,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_29",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          14.76378013105257,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_30",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          3.2808404985066377,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_31",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.12204724409449,
+          16.40420007856295,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 16.404199,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_32",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          32.9003436637375,
+          66.0008898711509,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 10.137795,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_33",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          31.653624503632514,
+          66.0008898711509,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 10.137795,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_34",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          76.24157497842657,
+          75.5645381651111,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.937008,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_35",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          76.24157497842657,
+          74.25220220710585,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.937008,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_36",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.8707918386272,
+          75.56453816511264,
+          0.0
+        ],
+        "rotation": 3.8667284703423636e-11
+      },
+      "params": {
+        "width_ft": 4.527559,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_37",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          86.8707918386272,
+          74.25220220710585,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 4.527559,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_38",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          52.39001800683498,
+          41.443803256974626,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 5.249344,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_39",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          52.39001800683498,
+          40.13146729897243,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 5.249344,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_40",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          88.93890573273124,
+          46.10259590789326,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.608924,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_41",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          88.93890573273124,
+          44.72464315198775,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.608924,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_42",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          48.63240659984899,
+          75.5645381651111,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 5.74147,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_43",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          48.63240659984899,
+          74.15377701025547,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 5.74147,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_44",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          68.71265131298189,
+          75.56453816511264,
+          0.0
+        ],
+        "rotation": 6.277747398908777e-11
+      },
+      "params": {
+        "width_ft": 2.788714,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_45",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          68.71265131298189,
+          74.25220220710585,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 2.788714,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_46",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          40.1188233346902,
+          48.284354438078516,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 3.969816,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_47",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          41.43115929269545,
+          48.284354438080044,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 3.969816,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_48",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          106.91672359713905,
+          53.35325207586921,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 3.674541,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_49",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          108.36029315094788,
+          53.353252075870735,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 3.674541,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_50",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          106.91672359715739,
+          65.4759554879427,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 5.347769,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_51",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          108.36029315092955,
+          65.47595548794575,
+          0.0
+        ],
+        "rotation": -90.0
+      },
+      "params": {
+        "width_ft": 5.347769,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_52",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          78.62024096822796,
+          46.10259590789326,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.641732,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_53",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          78.62024096822796,
+          44.72464315198775,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.641732,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_54",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          100.17459761290236,
+          46.03697910998994,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.641732,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_55",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          100.17459761290236,
+          44.724643151984694,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 3.641732,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_56",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          69.12220947216497,
+          44.72464315198775,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 2.887139,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "window_57",
+      "method": "window",
+      "category": "Windows",
+      "layer": "окна",
+      "block_name": "",
+      "geometry": {
+        "position": [
+          69.12220947216497,
+          46.10259590789326,
+          0.0
+        ],
+        "rotation": 0.0
+      },
+      "params": {
+        "width_ft": 2.887139,
+        "sill_height_ft": 2.952756
+      }
+    },
+    {
+      "id": "stair_0",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254728862,
+            156.20461200665667,
+            0.0
+          ],
+          [
+            81.85110679925407,
+            156.20461200666966,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254728862,
+          "min_y": 156.20461200665667,
+          "max_x": 81.85110679925407,
+          "max_y": 156.20461200666966
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_1",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            28.63588370214732,
+            164.7347957336908,
+            0.0
+          ],
+          [
+            28.63588370214732,
+            171.29647552371702,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 28.63588370214732,
+          "min_y": 164.7347957336908,
+          "max_x": 28.63588370214732,
+          "max_y": 171.29647552371702
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_2",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            28.63588370214732,
+            164.57075373894014,
+            0.0
+          ],
+          [
+            29.62013567065126,
+            164.57075373894014,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 28.63588370214732,
+          "min_y": 164.57075373894014,
+          "max_x": 29.62013567065126,
+          "max_y": 164.57075373894014
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_3",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            29.6201356706207,
+            164.57075373895998,
+            0.0
+          ],
+          [
+            29.095201287394158,
+            164.9480503268926,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 29.095201287394158,
+          "min_y": 164.57075373895998,
+          "max_x": 29.6201356706207,
+          "max_y": 164.9480503268926
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_4",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            29.6201356706207,
+            164.57075373897908,
+            0.0
+          ],
+          [
+            29.095201287400272,
+            164.19345715103347,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 29.095201287400272,
+          "min_y": 164.19345715103347,
+          "max_x": 29.6201356706207,
+          "max_y": 164.57075373897908
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_5",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            68.66213042130742,
+            184.41983510378557,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            175.56156738725014,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 68.66213042130742,
+          "min_y": 175.56156738725014,
+          "max_x": 68.66213042130742,
+          "max_y": 184.41983510378557
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_6",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            28.63588370214732,
+            156.20461200665667,
+            0.0
+          ],
+          [
+            40.1188233346902,
+            156.20461200665667,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 28.63588370214732,
+          "min_y": 156.20461200665667,
+          "max_x": 40.1188233346902,
+          "max_y": 156.20461200665667
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_7",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            28.63588370214732,
+            172.9368954712236,
+            0.0
+          ],
+          [
+            28.63588370214732,
+            156.20461200665667,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 28.63588370214732,
+          "min_y": 156.20461200665667,
+          "max_x": 28.63588370214732,
+          "max_y": 172.9368954712236
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_8",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            185.07600308276832,
+            0.0
+          ],
+          [
+            66.69362648431789,
+            185.07600308276832,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 185.07600308276832,
+          "max_x": 66.69362648431789,
+          "max_y": 185.07600308276832
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_9",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            184.41983510378557,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            184.41983510378557,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 184.41983510378557,
+          "max_x": 68.66213042130742,
+          "max_y": 184.41983510378557
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_10",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            183.43558313528163,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            183.43558313528163,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 183.43558313528163,
+          "max_x": 68.66213042130742,
+          "max_y": 183.43558313528163
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_11",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            182.4513311667777,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            182.4513311667777,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 182.4513311667777,
+          "max_x": 68.66213042130742,
+          "max_y": 182.4513311667777
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_12",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            181.4670791982776,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            181.4670791982776,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 181.4670791982776,
+          "max_x": 68.66213042130742,
+          "max_y": 181.4670791982776
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_13",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            180.48282722977365,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            180.48282722977365,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 180.48282722977365,
+          "max_x": 68.66213042130742,
+          "max_y": 180.48282722977365
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_14",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            179.49857526126587,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            179.49857526126587,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 179.49857526126587,
+          "max_x": 68.66213042130742,
+          "max_y": 179.49857526126587
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_15",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            178.51432329276196,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            178.51432329276196,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 178.51432329276196,
+          "max_x": 68.66213042130742,
+          "max_y": 178.51432329276196
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_16",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            66.69362648425677,
+            185.40408707237506,
+            0.0
+          ],
+          [
+            67.07092307219246,
+            184.87915268915003,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 66.69362648425677,
+          "min_y": 184.87915268915003,
+          "max_x": 67.07092307219246,
+          "max_y": 185.40408707237506
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_17",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            66.69362648427817,
+            185.40408707237506,
+            0.0
+          ],
+          [
+            66.31632989633637,
+            184.87915268915614,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 66.31632989633637,
+          "min_y": 184.87915268915614,
+          "max_x": 66.69362648427817,
+          "max_y": 185.40408707237506
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_18",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            66.6936264842965,
+            175.56156738725014,
+            0.0
+          ],
+          [
+            66.69362648423844,
+            185.40408707229332,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 66.69362648423844,
+          "min_y": 175.56156738725014,
+          "max_x": 66.6936264842965,
+          "max_y": 185.40408707229332
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_19",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            68.66213042130742,
+            184.41983510378557,
+            0.0
+          ],
+          [
+            64.72512254729168,
+            186.38833904079726,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 184.41983510378557,
+          "max_x": 68.66213042130742,
+          "max_y": 186.38833904079726
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_20",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            177.53007132425802,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            177.53007132425802,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 177.53007132425802,
+          "max_x": 68.66213042130742,
+          "max_y": 177.53007132425802
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_21",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            176.54581935575408,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            176.54581935575408,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 176.54581935575408,
+          "max_x": 68.66213042130742,
+          "max_y": 176.54581935575408
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_22",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254729168,
+            175.56156738725014,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            175.56156738725014,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254729168,
+          "min_y": 175.56156738725014,
+          "max_x": 68.66213042130742,
+          "max_y": 175.56156738725014
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_23",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            81.85110679925407,
+            156.20461200666966,
+            0.0
+          ],
+          [
+            81.85110679925407,
+            160.79778785968497,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 81.85110679925407,
+          "min_y": 156.20461200666966,
+          "max_x": 81.85110679925407,
+          "max_y": 160.79778785968497
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_24",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            72.79598868906673,
+            157.18886397526526,
+            0.0
+          ],
+          [
+            73.17328527699937,
+            156.6639295920372,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 72.79598868906673,
+          "min_y": 156.6639295920372,
+          "max_x": 73.17328527699937,
+          "max_y": 157.18886397526526
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_25",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            72.79598868908813,
+            157.18886397526526,
+            0.0
+          ],
+          [
+            72.41869210114022,
+            156.6639295920433,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 72.41869210114022,
+          "min_y": 156.6639295920433,
+          "max_x": 72.79598868908813,
+          "max_y": 157.18886397526526
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_26",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            72.79598868914618,
+            156.20461200665972,
+            0.0
+          ],
+          [
+            72.79598868905146,
+            157.18886397518045,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 72.79598868905146,
+          "min_y": 156.20461200665972,
+          "max_x": 72.79598868914618,
+          "max_y": 157.18886397518045
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_27",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934519194,
+            69.0028583750818,
+            0.0
+          ],
+          [
+            66.69362648431789,
+            69.0028583750818,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934519194,
+          "min_y": 69.0028583750818,
+          "max_x": 66.69362648431789,
+          "max_y": 69.0028583750818
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_28",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            68.66213042129826,
+            70.31519433310997,
+            0.0
+          ],
+          [
+            68.66213042129826,
+            61.45692661657454,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 68.66213042129826,
+          "min_y": 61.45692661657454,
+          "max_x": 68.66213042129826,
+          "max_y": 70.31519433310997
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_29",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            70.31519433310997,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            70.31519433310997,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 70.31519433310997,
+          "max_x": 72.66475509322343,
+          "max_y": 70.31519433310997
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_30",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            69.33094236460603,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            69.33094236460603,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 69.33094236460603,
+          "max_x": 72.66475509322343,
+          "max_y": 69.33094236460603
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_31",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            68.3466903961021,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            68.3466903961021,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 68.3466903961021,
+          "max_x": 72.66475509322343,
+          "max_y": 68.3466903961021
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_32",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            67.36243842759816,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            67.36243842759816,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 67.36243842759816,
+          "max_x": 72.66475509322343,
+          "max_y": 67.36243842759816
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_33",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            66.37818645909422,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            66.37818645909422,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 66.37818645909422,
+          "max_x": 72.66475509322343,
+          "max_y": 66.37818645909422
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_34",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            65.39393449059028,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            65.39393449059028,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 65.39393449059028,
+          "max_x": 72.66475509322343,
+          "max_y": 65.39393449059028
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_35",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            64.40968252208636,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            64.40968252208636,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 64.40968252208636,
+          "max_x": 72.66475509322343,
+          "max_y": 64.40968252208636
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_36",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            63.425430553582416,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            63.425430553582416,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 63.425430553582416,
+          "max_x": 72.66475509322343,
+          "max_y": 63.425430553582416
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_37",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518888,
+            60.4726746480706,
+            0.0
+          ],
+          [
+            72.66475509322343,
+            60.4726746480706,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518888,
+          "min_y": 60.4726746480706,
+          "max_x": 72.66475509322343,
+          "max_y": 60.4726746480706
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_38",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            66.69362648425066,
+            70.31519433308019,
+            0.0
+          ],
+          [
+            67.07092307218328,
+            69.79025994985517,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 66.69362648425066,
+          "min_y": 69.79025994985517,
+          "max_x": 67.07092307218328,
+          "max_y": 70.31519433308019
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_39",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            66.69362648427206,
+            70.31519433308019,
+            0.0
+          ],
+          [
+            66.31632989632415,
+            69.79025994986203,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 66.31632989632415,
+          "min_y": 69.79025994986203,
+          "max_x": 66.69362648427206,
+          "max_y": 70.31519433308019
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_40",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            70.63063435836419,
+            60.47267464807748,
+            0.0
+          ],
+          [
+            70.63063435836419,
+            70.31519433311685,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 70.63063435836419,
+          "min_y": 60.47267464807748,
+          "max_x": 70.63063435836419,
+          "max_y": 70.31519433311685
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_41",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            70.63063435834891,
+            60.472674648106505,
+            0.0
+          ],
+          [
+            70.2533377704163,
+            60.99760903133152,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 70.2533377704163,
+          "min_y": 60.472674648106505,
+          "max_x": 70.63063435834891,
+          "max_y": 60.99760903133152
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_42",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            70.63063435833058,
+            60.472674648106505,
+            0.0
+          ],
+          [
+            71.00793094627542,
+            60.99760903132541,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 70.63063435833058,
+          "min_y": 60.472674648106505,
+          "max_x": 71.00793094627542,
+          "max_y": 60.99760903132541
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_43",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            66.69362648423538,
+            60.4726746480706,
+            0.0
+          ],
+          [
+            66.69362648423538,
+            70.31519433311685,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 66.69362648423538,
+          "min_y": 60.4726746480706,
+          "max_x": 66.69362648423538,
+          "max_y": 70.31519433311685
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_44",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518277,
+            62.441178585078475,
+            0.0
+          ],
+          [
+            72.66475509322038,
+            62.441178585078475,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518277,
+          "min_y": 62.441178585078475,
+          "max_x": 72.66475509322038,
+          "max_y": 62.441178585078475
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_45",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934519194,
+            60.4726746480706,
+            0.0
+          ],
+          [
+            68.66213042130437,
+            60.4726746480706,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934519194,
+          "min_y": 60.4726746480706,
+          "max_x": 68.66213042130437,
+          "max_y": 60.4726746480706
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_46",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254728862,
+            59.48842267956667,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            59.48842267956667,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254728862,
+          "min_y": 59.48842267956667,
+          "max_x": 68.66213042130742,
+          "max_y": 59.48842267956667
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_47",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            68.66213042131048,
+            61.45692661657454,
+            0.0
+          ],
+          [
+            68.66213042130742,
+            59.48842267956667,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 68.66213042130742,
+          "min_y": 59.48842267956667,
+          "max_x": 68.66213042131048,
+          "max_y": 61.45692661657454
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_48",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.72512254728862,
+            157.18886397516061,
+            0.0
+          ],
+          [
+            80.86685483074707,
+            157.18886397517053,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.72512254728862,
+          "min_y": 157.18886397516061,
+          "max_x": 80.86685483074707,
+          "max_y": 157.18886397517053
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_49",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            80.86685483074707,
+            157.18886397517053,
+            0.0
+          ],
+          [
+            80.86685483075013,
+            160.79778785968497,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 80.86685483074707,
+          "min_y": 157.18886397517053,
+          "max_x": 80.86685483075013,
+          "max_y": 160.79778785968497
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_50",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            28.63588370214732,
+            172.9368954712236,
+            0.0
+          ],
+          [
+            35.525015579748,
+            172.9368954712236,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 28.63588370214732,
+          "min_y": 172.9368954712236,
+          "max_x": 35.525015579748,
+          "max_y": 172.9368954712236
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_51",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            29.62013567065126,
+            171.95264350271967,
+            0.0
+          ],
+          [
+            35.525015579748,
+            171.95264350271967,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 29.62013567065126,
+          "min_y": 171.95264350271967,
+          "max_x": 35.525015579748,
+          "max_y": 171.95264350271967
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_52",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            29.62013567065126,
+            171.95264350271967,
+            0.0
+          ],
+          [
+            29.62013567065126,
+            157.18886397516061,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 29.62013567065126,
+          "min_y": 157.18886397516061,
+          "max_x": 29.62013567065126,
+          "max_y": 171.95264350271967
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_53",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            29.62013567065126,
+            157.18886397516061,
+            0.0
+          ],
+          [
+            40.1188233346902,
+            157.18886397516061,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 29.62013567065126,
+          "min_y": 157.18886397516061,
+          "max_x": 40.1188233346902,
+          "max_y": 157.18886397516061
+        }
+      },
+      "params": {}
+    },
+    {
+      "id": "stair_54",
+      "method": "stair",
+      "category": "Stairs",
+      "layer": "ЛЕСТНИ",
+      "geometry": {
+        "points": [
+          [
+            64.79073934518277,
+            61.45692661657454,
+            0.0
+          ],
+          [
+            72.66475509322038,
+            61.45692661657454,
+            0.0
+          ]
+        ],
+        "bbox": {
+          "min_x": 64.79073934518277,
+          "min_y": 61.45692661657454,
+          "max_x": 72.66475509322038,
+          "max_y": 61.45692661657454
+        }
+      },
+      "params": {}
+    }
+  ]
+}

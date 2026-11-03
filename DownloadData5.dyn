@@ -1,0 +1,286 @@
+{
+  "Uuid": "f8682427-9f00-40cb-bf56-b61cdb3141ef",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "DownloadData5",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "Code": "\"\"\"\r\nDynamo Python Script: Конвертация RFA → DWG/DXF с сохранением структуры папок\r\n\"\"\"\r\n\r\nimport clr\r\nimport sys\r\nimport os\r\nfrom System.IO import Directory, Path, File\r\nimport System\r\nfrom System.Collections.Generic import List\r\n\r\n# Подключение библиотек\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nclr.AddReference('RevitAPI')\r\nclr.AddReference('RevitAPIUI')\r\nfrom Autodesk.Revit.DB import *\r\n\r\nclr.AddReference('RevitServices')\r\nfrom RevitServices.Persistence import DocumentManager\r\n\r\n# ===== ВХОДНЫЕ ДАННЫЕ =====\r\ninput_folder = IN[0] if len(IN) > 0 else None\r\noutput_folder = IN[1] if len(IN) > 1 else None\r\nexport_format = (IN[2] if len(IN) > 2 else \"DWG\").upper().strip()\r\n\r\n# ===== ПРОВЕРКА ВХОДНЫХ ДАННЫХ =====\r\nif not input_folder or not Directory.Exists(input_folder):\r\n    OUT = \"❌ Ошибка: Укажите существующую папку с RFA файлами (параметр 1)\"\r\n    quit()\r\n\r\nif not output_folder:\r\n    output_folder = Path.Combine(Path.GetDirectoryName(input_folder), \"Export_\" + Path.GetFileName(input_folder))\r\n\r\nif export_format not in [\"DWG\", \"DXF\"]:\r\n    OUT = \"❌ Ошибка: Формат должен быть DWG или DXF (параметр 3)\"\r\n    quit()\r\n\r\nfile_ext = \".dwg\" if export_format == \"DWG\" else \".dxf\"\r\n\r\n# ===== ПОЛУЧЕНИЕ ДОСТУПА К REVIT =====\r\ntry:\r\n    doc_manager = DocumentManager.Instance\r\n    source_doc = doc_manager.CurrentDBDocument\r\n    app = source_doc.Application\r\nexcept Exception as e:\r\n    OUT = f\"❌ Ошибка подключения к Revit: {str(e)}\"\r\n    quit()\r\n\r\n# ===== НАСТРОЙКА ЭКСПОРТА =====\r\nif export_format == \"DWG\":\r\n    export_opts = DWGExportOptions()\r\n    export_opts.NamingConvention = DWGNamingConvention.LayerName\r\nelse:\r\n    export_opts = DXFExportOptions()\r\n\r\n# ===== ПОИСК ВСЕХ .RFA ФАЙЛОВ =====\r\nrfa_files = []\r\nfor root, dirs, files in os.walk(input_folder):\r\n    for file in files:\r\n        if file.lower().endswith('.rfa'):\r\n            rfa_files.append(Path.Combine(root, file))\r\n\r\nif not rfa_files:\r\n    OUT = f\"⚠ Файлы .rfa не найдены в: {input_folder}\"\r\n    quit()\r\n\r\n# ===== ОБРАБОТКА ФАЙЛОВ =====\r\nresults = []\r\nsuccess_count = 0\r\nerror_count = 0\r\n\r\nfor i, rfa_path in enumerate(rfa_files, 1):\r\n    file_name = Path.GetFileNameWithoutExtension(rfa_path)\r\n    family_doc = None\r\n    \r\n    try:\r\n        print(f\"[{i}/{len(rfa_files)}] Обработка: {file_name}\")\r\n        \r\n        # 🔑 КЛЮЧЕВОЙ МОМЕНТ: вычисляем относительный путь\r\n        rel_path = os.path.relpath(rfa_path, input_folder)\r\n        # Убираем расширение для имени выходного файла\r\n        rel_path_no_ext = os.path.splitext(rel_path)[0]\r\n        \r\n        # Создаём такую же структуру папок в output_folder\r\n        target_subfolder = Path.Combine(output_folder, os.path.dirname(rel_path))\r\n        if not Directory.Exists(target_subfolder):\r\n            Directory.CreateDirectory(target_subfolder)\r\n        \r\n        # Открываем семейство\r\n        family_doc = app.OpenDocumentFile(rfa_path)\r\n        \r\n        # Ищем 3D вид\r\n        view3d = None\r\n        collector = FilteredElementCollector(family_doc).OfClass(View3D)\r\n        for v in collector:\r\n            if not v.IsTemplate:\r\n                view3d = v\r\n                break\r\n        \r\n        if not view3d:\r\n            results.append(f\"⚠ {rel_path}: Нет 3D вида\")\r\n            continue\r\n        \r\n        # Экспорт в целевую подпапку\r\n        view_ids = List[ElementId]()\r\n        view_ids.Add(view3d.Id)\r\n        \r\n        # Экспортируем с базовым именем (без пути)\r\n        base_name = os.path.basename(rel_path_no_ext)\r\n        family_doc.Export(target_subfolder, base_name, view_ids, export_opts)\r\n        \r\n        # Попытка переименовать, если имя файла ≠ имя семейства\r\n        expected_file = Path.Combine(target_subfolder, base_name + file_ext)\r\n        if not File.Exists(expected_file):\r\n            view_name_clean = \"\".join(c for c in view3d.Name if c not in r'<>:\"/\\|?*')\r\n            alt_file = Path.Combine(target_subfolder, view_name_clean + file_ext)\r\n            if File.Exists(alt_file):\r\n                try:\r\n                    File.Move(alt_file, expected_file)\r\n                except:\r\n                    pass\r\n        \r\n        success_count += 1\r\n        results.append(f\"✅ {rel_path}\")\r\n        \r\n    except Exception as e:\r\n        error_count += 1\r\n        error_msg = str(e).replace('\\n', ' ')[:100]\r\n        results.append(f\"❌ {os.path.relpath(rfa_path, input_folder)}: {error_msg}\")\r\n        \r\n    finally:\r\n        if family_doc is not None:\r\n            try:\r\n                family_doc.Close(False)\r\n            except:\r\n                pass\r\n\r\n# ===== СОХРАНЕНИЕ ОТЧЕТА =====\r\nreport_path = Path.Combine(output_folder, \"_export_report.txt\")\r\nwith open(report_path, 'w', encoding='utf-8') as f:\r\n    f.write(f\"ОТЧЕТ: RFA → {export_format} (с сохранением структуры)\\n\")\r\n    f.write(f\"Дата: {System.DateTime.Now}\\n\")\r\n    f.write(f\"Источник: {input_folder}\\n\")\r\n    f.write(f\"Назначение: {output_folder}\\n\")\r\n    f.write(f\"Всего: {len(rfa_files)} | Успешно: {success_count} | Ошибок: {error_count}\\n\")\r\n    f.write(\"-\" * 60 + \"\\n\")\r\n    for r in results:\r\n        f.write(r + \"\\n\")\r\n\r\n# ===== ВЫВОД =====\r\nOUT = f\"\"\"🎯 Конвертация завершена!\r\n\r\n📊 Статистика:\r\n• Всего файлов: {len(rfa_files)}\r\n• Успешно: {success_count}\r\n• Ошибок: {error_count}\r\n\r\n📁 Структура папок сохранена в: {output_folder}\r\n📄 Отчет: {report_path}\"\"\"",
+      "Engine": "CPython3",
+      "EngineName": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "d2ca639831814765ba526261d22b8189",
+      "NodeType": "PythonScriptNode",
+      "Inputs": [
+        {
+          "Id": "dc10c69d9ec346ec86759e4fa51faf0f",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "055dfbac0ee64b27a4edc3620e30287b",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5e6168727607435cb1e3d8d3a4da0445",
+          "Name": "IN[2]",
+          "Description": "Input #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4dbe0bbad23c4d2b9c943af7875e1474",
+          "Name": "OUT",
+          "Description": "Результат сценария Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Выполнение встроенного сценария Python."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "Id": "8d84425a98424ca7aaefcbc7379c0979",
+      "NodeType": "StringInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9e05a0d6f744488b99bf365384a21a5c",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Создание строки.",
+      "InputValue": "C:\\\\ProgramData\\\\Autodesk\\\\RVT 2024\\\\Libraries\\\\Russian\\\\Russia"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "Id": "3a1076124dae487f8311d4eaf5c91dba",
+      "NodeType": "StringInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "7d61136fd7e642b383f4f4d5cd9f2b17",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Создание строки.",
+      "InputValue": "D:\\\\RevitData"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "Id": "8eec227cd25043adaa070f94312ed74a",
+      "NodeType": "StringInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "48c8b2e0e76f4297ac60741d2794da9c",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Создание строки.",
+      "InputValue": "DXF"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "WatchWidth": 420.0,
+      "WatchHeight": 38.4,
+      "Id": "cfe8c81b725b42d3a0708d0d98cebef6",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "22fa9190596f47ff8ecda2b794766ebc",
+          "Name": "",
+          "Description": "Узел для отображения выходных данных",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8c9ec885e9a34ed2920edb5275063c28",
+          "Name": "",
+          "Description": "Выходные данные узла",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Визуализация выходных данных узла"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "4dbe0bbad23c4d2b9c943af7875e1474",
+      "End": "22fa9190596f47ff8ecda2b794766ebc",
+      "Id": "e8caa5c1d7804f7f91e002b9b69eb148",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9e05a0d6f744488b99bf365384a21a5c",
+      "End": "dc10c69d9ec346ec86759e4fa51faf0f",
+      "Id": "7633e654b17c4843a89148ec2a2cf885",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "7d61136fd7e642b383f4f4d5cd9f2b17",
+      "End": "055dfbac0ee64b27a4edc3620e30287b",
+      "Id": "04691fbc823a4d20ae69729ba7c75420",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "48c8b2e0e76f4297ac60741d2794da9c",
+      "End": "5e6168727607435cb1e3d8d3a4da0445",
+      "Id": "ab02de227e424b909139455494c3580b",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Свойства",
+      "Version": "2.19",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "6.1",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "Нет",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.19.3.6394",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "_Фоновый просмотр",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Id": "d2ca639831814765ba526261d22b8189",
+        "Name": "Python Script",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 562.4,
+        "Y": 287.2
+      },
+      {
+        "Id": "8d84425a98424ca7aaefcbc7379c0979",
+        "Name": "String",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 257.59999999999997,
+        "Y": 99.200000000000045
+      },
+      {
+        "Id": "3a1076124dae487f8311d4eaf5c91dba",
+        "Name": "String",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 255.2,
+        "Y": 307.2
+      },
+      {
+        "Id": "8eec227cd25043adaa070f94312ed74a",
+        "Name": "String",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 258.40000000000003,
+        "Y": 441.6
+      },
+      {
+        "Id": "cfe8c81b725b42d3a0708d0d98cebef6",
+        "Name": "Watch",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 822.67708254602132,
+        "Y": 330.248545122242
+      }
+    ],
+    "Annotations": [],
+    "X": 77.772226385916213,
+    "Y": -52.548904354958495,
+    "Zoom": 0.905063040397227
+  }
+}

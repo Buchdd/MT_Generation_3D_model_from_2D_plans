@@ -1,0 +1,2120 @@
+{
+  "source_dxf": "C:\\Users\\Acer\\Desktop\\Севкав\\Generation3DFrom2DLib_06\\data\\processed\\pred_raw\\cottedj.dxf",
+  "total": 98,
+  "by_method": {
+    "wall": 69,
+    "door": 29
+  },
+  "level_name": "Level 1",
+  "commands": [
+    {
+      "id": "wall_0",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          34.251968503936986,
+          157.1789743085431,
+          0.0
+        ],
+        "end": [
+          16.404199475065592,
+          157.1789743085431,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_1",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          16.404199475065592,
+          157.1789743085431,
+          0.0
+        ],
+        "end": [
+          16.404199475065592,
+          162.1002341510628,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_2",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          16.404199475065592,
+          162.1002341510628,
+          0.0
+        ],
+        "end": [
+          3.2808398950130995,
+          162.1002341510628,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_3",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          3.2808398950130995,
+          162.1002341510628,
+          0.0
+        ],
+        "end": [
+          3.2808398950130995,
+          196.35220265499976,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_4",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          3.2808398950130995,
+          196.35220265499976,
+          0.0
+        ],
+        "end": [
+          17.847769028871365,
+          196.35220265499976,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_5",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          17.847769028871365,
+          196.35220265499976,
+          0.0
+        ],
+        "end": [
+          17.847769028871365,
+          191.43094281248005,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_6",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          17.847769028871365,
+          191.43094281248005,
+          0.0
+        ],
+        "end": [
+          34.251968503936986,
+          191.43094281248005,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_7",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          34.251968503936986,
+          191.43094281248005,
+          0.0
+        ],
+        "end": [
+          34.251968503936986,
+          157.1789743085431,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_8",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          34.25196850394115,
+          70.12675555527998,
+          0.0
+        ],
+        "end": [
+          16.40419947506976,
+          70.12675555527998,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_9",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          16.40419947506976,
+          70.12675555527998,
+          0.0
+        ],
+        "end": [
+          16.40419947506976,
+          75.04801539779969,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_10",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          16.40419947506976,
+          75.04801539779969,
+          0.0
+        ],
+        "end": [
+          3.280839895017265,
+          75.04801539779969,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_11",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          3.280839895017265,
+          75.04801539779969,
+          0.0
+        ],
+        "end": [
+          3.280839895017265,
+          109.29998390173667,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_12",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          3.280839895017265,
+          109.29998390173667,
+          0.0
+        ],
+        "end": [
+          17.847769028875533,
+          109.29998390173667,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_13",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          17.847769028875533,
+          109.29998390173667,
+          0.0
+        ],
+        "end": [
+          17.847769028875533,
+          104.37872405921698,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_14",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          17.847769028875533,
+          104.37872405921698,
+          0.0
+        ],
+        "end": [
+          34.25196850394115,
+          104.37872405921698,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_15",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          34.25196850394115,
+          104.37872405921698,
+          0.0
+        ],
+        "end": [
+          34.25196850394115,
+          70.12675555527998,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_16",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          9.969187287515453,
+          158.81939425604963,
+          0.0
+        ],
+        "end": [
+          10.222522492467629,
+          158.1285037202028,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.949529,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_17",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          3.5925196850393464,
+          158.31086407232263,
+          0.0
+        ],
+        "end": [
+          4.412729658792627,
+          158.31086407232263,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_18",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          4.412729658792627,
+          158.31086407232263,
+          0.0
+        ],
+        "end": [
+          4.412729658792627,
+          157.4906540985693,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_19",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          4.412729658792627,
+          157.4906540985693,
+          0.0
+        ],
+        "end": [
+          3.5925196850393464,
+          157.4906540985693,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_20",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          3.5925196850393464,
+          157.4906540985693,
+          0.0
+        ],
+        "end": [
+          3.5925196850393464,
+          158.31086407232263,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_21",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          10.222522492467629,
+          157.9845541746866,
+          0.0
+        ],
+        "end": [
+          10.222522492467629,
+          157.46687339957538,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.287899,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_22",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          25.82571157022971,
+          194.7117827074932,
+          0.0
+        ],
+        "end": [
+          25.377397177880766,
+          195.40267324334005,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.949529,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_23",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          33.94028871391074,
+          195.22031289122023,
+          0.0
+        ],
+        "end": [
+          33.12007874015745,
+          195.22031289122023,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_24",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          33.12007874015745,
+          195.22031289122023,
+          0.0
+        ],
+        "end": [
+          33.12007874015745,
+          196.04052286497355,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_25",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          33.12007874015745,
+          196.04052286497355,
+          0.0
+        ],
+        "end": [
+          33.94028871391074,
+          196.04052286497355,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_26",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          33.94028871391074,
+          196.04052286497355,
+          0.0
+        ],
+        "end": [
+          33.94028871391074,
+          195.22031289122023,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_27",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          25.377397177880766,
+          195.5466227888562,
+          0.0
+        ],
+        "end": [
+          25.377397177880766,
+          196.06430356396743,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.287899,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_28",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          8.962470975727856,
+          71.76717550278654,
+          0.0
+        ],
+        "end": [
+          4.002624671920152,
+          70.84854033218289,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.440782,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_29",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          27.476724124892844,
+          107.65956395423011,
+          0.0
+        ],
+        "end": [
+          33.53018372703826,
+          108.57819912483379,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.440782,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_30",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_наруж",
+      "geometry": {
+        "start": [
+          17.125984251968493,
+          23.661761295695523,
+          0.0
+        ],
+        "end": [
+          17.125984251968504,
+          24.29038895138725,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.257255,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_31",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_внут",
+      "geometry": {
+        "start": [
+          17.45406824146979,
+          176.76558848177143,
+          0.0
+        ],
+        "end": [
+          16.797900262467166,
+          176.76558848177143,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "wall_32",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Стены_внут",
+      "geometry": {
+        "start": [
+          17.45406824147396,
+          89.71336972850833,
+          0.0
+        ],
+        "end": [
+          16.797900262471334,
+          89.71336972850833,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": true
+      }
+    },
+    {
+      "id": "partition_0",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -83.78505171965521,
+          131.8610437197914,
+          0.0
+        ],
+        "end": [
+          -83.78505171965521,
+          132.25474450719292,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_1",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -69.02127219209615,
+          136.12613558330847,
+          0.0
+        ],
+        "end": [
+          -65.74043229708303,
+          135.73243479590684,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_2",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -70.72730893750298,
+          121.49358965154994,
+          0.0
+        ],
+        "end": [
+          -70.3336081501014,
+          124.87285474341346,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.556777,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_3",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -65.74043229708303,
+          135.73243479590684,
+          0.0
+        ],
+        "end": [
+          -64.94066209311694,
+          135.5854992177808,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.164042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_4",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -66.69426677450814,
+          132.45159490089372,
+          0.0
+        ],
+        "end": [
+          -66.63940931478982,
+          132.25474450719292,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.164042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_5",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -66.69426677450814,
+          132.05789411349215,
+          0.0
+        ],
+        "end": [
+          -65.93728269078382,
+          129.17075500588064,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_6",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -65.74043229708303,
+          128.77705421847907,
+          0.0
+        ],
+        "end": [
+          -62.900861125455855,
+          132.24722255423208,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_7",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -65.74043229708303,
+          120.96865526834785,
+          0.0
+        ],
+        "end": [
+          -65.74043229708303,
+          120.57495448094626,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_8",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -70.3336081501014,
+          135.73243479590684,
+          0.0
+        ],
+        "end": [
+          -76.89528794012764,
+          135.73243479590684,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_9",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -70.3336081501014,
+          120.57495448094626,
+          0.0
+        ],
+        "end": [
+          -70.3336081501014,
+          113.81642429721923,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_10",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -83.78505171965105,
+          44.808824966528285,
+          0.0
+        ],
+        "end": [
+          -83.78505171965105,
+          45.202525753929855,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_11",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -69.02127219209198,
+          49.07391683004534,
+          0.0
+        ],
+        "end": [
+          -65.93728269077965,
+          48.68021604264377,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_12",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -70.72730893749882,
+          48.68021604264377,
+          0.0
+        ],
+        "end": [
+          -76.89528794012348,
+          48.68021604264377,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_13",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -70.33360815009723,
+          37.82063599015033,
+          0.0
+        ],
+        "end": [
+          -70.72730893749882,
+          38.00575243327699,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_14",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -65.93728269077965,
+          48.68021604264377,
+          0.0
+        ],
+        "end": [
+          -65.74043229707887,
+          45.39937614763065,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_15",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -65.74043229707887,
+          45.00567536022907,
+          0.0
+        ],
+        "end": [
+          -65.93728269077965,
+          42.118536252617524,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_16",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -65.74043229707887,
+          41.724835465215946,
+          0.0
+        ],
+        "end": [
+          -68.83656364573483,
+          43.5621058064233,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_17",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -73.81129843881115,
+          33.91643651508471,
+          0.0
+        ],
+        "end": [
+          -69.02127219209198,
+          33.52273572768314,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.393701,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_18",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -70.33360815009723,
+          33.91643651508471,
+          0.0
+        ],
+        "end": [
+          -61.147256444060496,
+          33.91643651508471,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_19",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -70.33360815009723,
+          43.5621058064233,
+          0.0
+        ],
+        "end": [
+          -69.34935618159331,
+          43.5621058064233,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.984252,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_20",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -68.36510421308937,
+          43.5621058064233,
+          0.0
+        ],
+        "end": [
+          -67.38085224458543,
+          44.069036243359974,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.984252,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_21",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -67.51990623442191,
+          43.5621058064233,
+          0.0
+        ],
+        "end": [
+          -67.8729782288374,
+          43.00095472012264,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_22",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -67.69644223162965,
+          43.84268134957364,
+          0.0
+        ],
+        "end": [
+          -70.04851342548807,
+          47.872217214714716,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 1.64042,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_23",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -64.65446580684706,
+          132.45159490089375,
+          0.0
+        ],
+        "end": [
+          -65.41234830757756,
+          133.8951644546995,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.854041,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_24",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -68.73406774216922,
+          132.25474450719292,
+          0.0
+        ],
+        "end": [
+          -68.36510421308937,
+          133.8951644546995,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.368964,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_25",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -66.39660027608149,
+          130.6143245596864,
+          0.0
+        ],
+        "end": [
+          -65.41234830757756,
+          130.6143245596864,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.984252,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_26",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -68.73406774216922,
+          135.33873400850533,
+          0.0
+        ],
+        "end": [
+          -61.14725644406466,
+          135.33873400850533,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_27",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -68.73406774216922,
+          135.46211661314305,
+          0.0
+        ],
+        "end": [
+          -68.36510421308937,
+          133.8951644546995,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.368964,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_28",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -64.65446580684706,
+          132.16760903292877,
+          0.0
+        ],
+        "end": [
+          -63.29225929298943,
+          129.17075500588064,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_29",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -64.65446580684706,
+          132.16760903292877,
+          0.0
+        ],
+        "end": [
+          -61.14725644406466,
+          129.17075500588064,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_30",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -64.65446580684706,
+          132.24722255423208,
+          0.0
+        ],
+        "end": [
+          -61.14725644406466,
+          131.15109472554522,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_31",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -64.65446580684706,
+          132.32683607553537,
+          0.0
+        ],
+        "end": [
+          -63.29225929298946,
+          135.32369010258353,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_32",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -64.65446580684706,
+          132.32683607553537,
+          0.0
+        ],
+        "end": [
+          -61.14725644406466,
+          135.32369010258356,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_33",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -64.65446580684706,
+          132.24722255423205,
+          0.0
+        ],
+        "end": [
+          -61.14725644406466,
+          133.34335038291897,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_34",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -66.39660027608149,
+          133.8951644546995,
+          0.0
+        ],
+        "end": [
+          -67.38085224458543,
+          133.8951644546995,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.984252,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "partition_35",
+      "method": "wall",
+      "category": "Walls",
+      "layer": "Перегородки",
+      "geometry": {
+        "start": [
+          -67.38085224458543,
+          132.05789411349215,
+          0.0
+        ],
+        "end": [
+          -67.38085224458543,
+          129.17075500588064,
+          0.0
+        ]
+      },
+      "params": {
+        "height_ft": 9.84252,
+        "thickness_ft": 0.656168,
+        "is_outer": false
+      }
+    },
+    {
+      "id": "door_0",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U19",
+      "geometry": {
+        "position": [
+          19.35400844573484,
+          157.17897430854305,
+          0.0
+        ],
+        "rotation": 0
+      },
+      "params": {
+        "width_ft": 3.016942
+      }
+    },
+    {
+      "id": "door_1",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U19",
+      "geometry": {
+        "position": [
+          27.38208087654183,
+          157.17897430854305,
+          0.0
+        ],
+        "rotation": 0
+      },
+      "params": {
+        "width_ft": 3.016942
+      }
+    },
+    {
+      "id": "door_2",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U20",
+      "geometry": {
+        "position": [
+          7.624290425876284,
+          162.1002341510628,
+          0.0
+        ],
+        "rotation": 0
+      },
+      "params": {
+        "width_ft": 5.085302
+      }
+    },
+    {
+      "id": "door_3",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U19",
+      "geometry": {
+        "position": [
+          34.251968503936986,
+          167.82618752357143,
+          0.0
+        ],
+        "rotation": 90.0
+      },
+      "params": {
+        "width_ft": 3.016942
+      }
+    },
+    {
+      "id": "door_4",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U19",
+      "geometry": {
+        "position": [
+          34.251968503936986,
+          184.09157740807345,
+          0.0
+        ],
+        "rotation": 90.0
+      },
+      "params": {
+        "width_ft": 3.016942
+      }
+    },
+    {
+      "id": "door_5",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U21",
+      "geometry": {
+        "position": [
+          23.14148269856464,
+          191.43094281248005,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 6.069554
+      }
+    },
+    {
+      "id": "door_6",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U21",
+      "geometry": {
+        "position": [
+          7.853949218527202,
+          196.35220265499976,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 6.069554
+      }
+    },
+    {
+      "id": "door_7",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U21",
+      "geometry": {
+        "position": [
+          3.2808398950130995,
+          184.76403151871355,
+          0.0
+        ],
+        "rotation": 270.0
+      },
+      "params": {
+        "width_ft": 6.069554
+      }
+    },
+    {
+      "id": "door_8",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U23",
+      "geometry": {
+        "position": [
+          16.404199475065592,
+          159.05109996678894,
+          0.0
+        ],
+        "rotation": 90.00000000000003
+      },
+      "params": {
+        "width_ft": 3.510499
+      }
+    },
+    {
+      "id": "door_9",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U24",
+      "geometry": {
+        "position": [
+          23.013196037606665,
+          190.17117726496124,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 3.116798
+      }
+    },
+    {
+      "id": "door_10",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U25",
+      "geometry": {
+        "position": [
+          21.768372703412048,
+          180.53855436103655,
+          0.0
+        ],
+        "rotation": 359.9999999999999
+      },
+      "params": {
+        "width_ft": 2.854331
+      }
+    },
+    {
+      "id": "door_11",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U26",
+      "geometry": {
+        "position": [
+          24.015748031496038,
+          159.05109996678894,
+          0.0
+        ],
+        "rotation": 90.00000000000003
+      },
+      "params": {
+        "width_ft": 2.854331
+      }
+    },
+    {
+      "id": "door_12",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U26",
+      "geometry": {
+        "position": [
+          24.015748031496038,
+          169.28527352114153,
+          0.0
+        ],
+        "rotation": 90.00000000000003
+      },
+      "params": {
+        "width_ft": 2.854331
+      }
+    },
+    {
+      "id": "door_13",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U27",
+      "geometry": {
+        "position": [
+          16.797900262467166,
+          169.28527352114153,
+          0.0
+        ],
+        "rotation": 270.0
+      },
+      "params": {
+        "width_ft": 3.116798
+      }
+    },
+    {
+      "id": "door_14",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U27",
+      "geometry": {
+        "position": [
+          16.797900262467166,
+          176.74174524837477,
+          0.0
+        ],
+        "rotation": 270.0
+      },
+      "params": {
+        "width_ft": 3.116798
+      }
+    },
+    {
+      "id": "door_15",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U21",
+      "geometry": {
+        "position": [
+          19.354008445739005,
+          70.12675555527997,
+          0.0
+        ],
+        "rotation": 0
+      },
+      "params": {
+        "width_ft": 6.069554
+      }
+    },
+    {
+      "id": "door_16",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U19",
+      "geometry": {
+        "position": [
+          34.25196850394115,
+          80.77396877030837,
+          0.0
+        ],
+        "rotation": 90.0
+      },
+      "params": {
+        "width_ft": 3.016942
+      }
+    },
+    {
+      "id": "door_17",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U19",
+      "geometry": {
+        "position": [
+          34.25196850394115,
+          97.0393586548104,
+          0.0
+        ],
+        "rotation": 90.0
+      },
+      "params": {
+        "width_ft": 3.016942
+      }
+    },
+    {
+      "id": "door_18",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U21",
+      "geometry": {
+        "position": [
+          23.141482698568808,
+          104.37872405921698,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 6.069554
+      }
+    },
+    {
+      "id": "door_19",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U21",
+      "geometry": {
+        "position": [
+          7.853949218531332,
+          109.29998390173667,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 6.069554
+      }
+    },
+    {
+      "id": "door_20",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U21",
+      "geometry": {
+        "position": [
+          3.280839895017265,
+          97.71181276545046,
+          0.0
+        ],
+        "rotation": 270.0
+      },
+      "params": {
+        "width_ft": 6.069554
+      }
+    },
+    {
+      "id": "door_21",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U24",
+      "geometry": {
+        "position": [
+          23.013196037610797,
+          103.11895851169815,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 3.116798
+      }
+    },
+    {
+      "id": "door_22",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U25",
+      "geometry": {
+        "position": [
+          21.768372703416215,
+          93.48633560777343,
+          0.0
+        ],
+        "rotation": 359.9999999999999
+      },
+      "params": {
+        "width_ft": 2.854331
+      }
+    },
+    {
+      "id": "door_23",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U26",
+      "geometry": {
+        "position": [
+          24.015748031500205,
+          82.23305476787841,
+          0.0
+        ],
+        "rotation": 90.00000000000003
+      },
+      "params": {
+        "width_ft": 2.854331
+      }
+    },
+    {
+      "id": "door_24",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U28",
+      "geometry": {
+        "position": [
+          16.797900262471334,
+          89.12074270671326,
+          0.0
+        ],
+        "rotation": 270.0
+      },
+      "params": {
+        "width_ft": 3.116798
+      }
+    },
+    {
+      "id": "door_25",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U27",
+      "geometry": {
+        "position": [
+          16.797900262471334,
+          89.68952649511168,
+          0.0
+        ],
+        "rotation": 270.0
+      },
+      "params": {
+        "width_ft": 3.116798
+      }
+    },
+    {
+      "id": "door_26",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U25",
+      "geometry": {
+        "position": [
+          21.768372703416215,
+          78.32885529281279,
+          0.0
+        ],
+        "rotation": 0
+      },
+      "params": {
+        "width_ft": 2.854331
+      }
+    },
+    {
+      "id": "door_27",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U21",
+      "geometry": {
+        "position": [
+          7.132164441628481,
+          76.09788416420386,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 6.069554
+      }
+    },
+    {
+      "id": "door_28",
+      "method": "door",
+      "category": "Doors",
+      "layer": "Окна и двери",
+      "block_name": "*U24",
+      "geometry": {
+        "position": [
+          7.00387778067047,
+          74.83811861668502,
+          0.0
+        ],
+        "rotation": 180.0
+      },
+      "params": {
+        "width_ft": 3.116798
+      }
+    }
+  ]
+}

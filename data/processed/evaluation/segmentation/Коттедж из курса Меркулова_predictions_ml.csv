@@ -1,0 +1,349 @@
+﻿entity_handle,predicted_class,confidence,entity_type,method
+679C,Базовое окно,0.39,LWPOLYLINE,ML
+679D,Базовое окно,0.39,LWPOLYLINE,ML
+679E,Базовое окно,0.39,LWPOLYLINE,ML
+679F,Перекрытия,0.485,LINE,ML
+67A0,Перекрытия,0.485,LINE,ML
+6822,Базовое окно,0.39,LWPOLYLINE,ML
+6823,Базовое окно,0.39,LWPOLYLINE,ML
+6824,Базовое окно,0.39,LWPOLYLINE,ML
+6825,Базовое окно,0.39,LWPOLYLINE,ML
+6827,Базовое окно,0.39,LWPOLYLINE,ML
+6829,Базовое окно,0.39,LWPOLYLINE,ML
+682A,Базовое окно,0.39,LWPOLYLINE,ML
+682B,Базовое окно,0.39,LWPOLYLINE,ML
+682C,Базовое окно,0.39,LWPOLYLINE,ML
+682D,Базовое окно,0.39,LWPOLYLINE,ML
+682E,Базовое окно,0.39,LWPOLYLINE,ML
+682F,Базовое окно,0.39,LWPOLYLINE,ML
+6833,Базовое окно,0.39,LWPOLYLINE,ML
+6834,Базовое окно,0.39,LWPOLYLINE,ML
+6835,Базовое окно,0.39,LWPOLYLINE,ML
+6CE7,Базовое окно,0.39,LWPOLYLINE,ML
+6CE8,Базовое окно,0.39,LWPOLYLINE,ML
+6CE9,Базовое окно,0.39,LWPOLYLINE,ML
+6CEA,Перекрытия,0.54,LINE,ML
+6CEB,Перекрытия,0.54,LINE,ML
+6CEC,Базовое окно,0.39,LWPOLYLINE,ML
+6CED,Базовое окно,0.39,LWPOLYLINE,ML
+6CEE,Базовое окно,0.39,LWPOLYLINE,ML
+6CEF,Базовое окно,0.39,LWPOLYLINE,ML
+6CF0,Базовое окно,0.39,LWPOLYLINE,ML
+6CF3,Базовое окно,0.39,LWPOLYLINE,ML
+6CF5,Базовое окно,0.39,LWPOLYLINE,ML
+6CF6,Базовое окно,0.39,LWPOLYLINE,ML
+6CF7,Базовое окно,0.39,LWPOLYLINE,ML
+6CF8,Базовое окно,0.39,LWPOLYLINE,ML
+6CF9,Базовое окно,0.39,LWPOLYLINE,ML
+6CFA,Базовое окно,0.39,LWPOLYLINE,ML
+6CFB,Базовое окно,0.39,LWPOLYLINE,ML
+6CFC,Базовое окно,0.39,LWPOLYLINE,ML
+6E1F,Базовое окно,0.39,LWPOLYLINE,ML
+7696,Перекрытия,0.46,LINE,ML
+7A29,Перекрытия,0.505,LINE,ML
+7A4C,Перекрытия,0.49,LINE,ML
+7B63,Перекрытия,0.505,LINE,ML
+7B64,Перекрытия,0.53,LINE,ML
+7B66,Перекрытия,0.53,LINE,ML
+7B68,Перекрытия,0.53,LINE,ML
+7B6A,Перекрытия,0.52,LINE,ML
+7B6F,Перекрытия,0.51,CIRCLE,ML
+7B70,Перекрытия,0.525,LINE,ML
+7B71,Перекрытия,0.51,LINE,ML
+7B72,Перекрытия,0.51,LINE,ML
+7B74,Перекрытия,0.5,LINE,ML
+7B75,Перекрытия,0.525,LINE,ML
+7B77,Перекрытия,0.525,LINE,ML
+7B78,Перекрытия,0.475,LINE,ML
+7B79,Базовое окно,0.39,LWPOLYLINE,ML
+7B7C,Базовое окно,0.39,LWPOLYLINE,ML
+7B7E,Перекрытия,0.505,LINE,ML
+7B7F,Перекрытия,0.51,CIRCLE,ML
+7B8B,Перекрытия,0.525,LINE,ML
+7B98,Перекрытия,0.475,LINE,ML
+7B99,Перекрытия,0.46,LINE,ML
+7B9A,Перекрытия,0.475,LINE,ML
+7B9B,Перекрытия,0.525,LINE,ML
+7B9C,Перекрытия,0.52,LINE,ML
+7B9D,Перекрытия,0.505,LINE,ML
+7B9F,Перекрытия,0.48,LINE,ML
+7BA0,Перекрытия,0.48,LINE,ML
+7BA1,Перекрытия,0.475,LINE,ML
+7BA2,Перекрытия,0.465,LINE,ML
+7CAB,Перекрытия,0.43,CIRCLE,ML
+812F,Базовое окно,0.4,LINE,ML
+8136,Базовое окно,0.4,LINE,ML
+8137,Базовое окно,0.4,LINE,ML
+8138,Базовое окно,0.4,LINE,ML
+8139,Базовое окно,0.4,LINE,ML
+813A,Базовое окно,0.4,LINE,ML
+813F,Базовое окно,0.4,LINE,ML
+8141,Базовое окно,0.4,LINE,ML
+84F3,Перекрытия,0.525,LINE,ML
+84F4,Перекрытия,0.45,LINE,ML
+84F5,Перекрытия,0.45,LINE,ML
+84F6,Перекрытия,0.45,LINE,ML
+84F7,Перекрытия,0.45,LINE,ML
+84F8,Перекрытия,0.525,LINE,ML
+84F9,Перекрытия,0.45,LINE,ML
+8506,Базовое окно,0.4,LINE,ML
+8508,Базовое окно,0.39,LWPOLYLINE,ML
+8509,Базовое окно,0.39,LWPOLYLINE,ML
+850A,Базовое окно,0.39,LWPOLYLINE,ML
+8510,Базовое окно,0.4,LINE,ML
+8511,Базовое окно,0.4,LINE,ML
+8512,Базовое окно,0.4,LINE,ML
+8513,Базовое окно,0.4,LINE,ML
+8514,Базовое окно,0.4,LINE,ML
+8515,Базовое окно,0.4,LINE,ML
+8516,Базовое окно,0.4,LINE,ML
+8517,Базовое окно,0.4,LINE,ML
+8518,Базовое окно,0.4,LINE,ML
+851B,Базовое окно,0.4,LINE,ML
+851C,Базовое окно,0.4,LINE,ML
+851D,Базовое окно,0.4,LINE,ML
+851E,Базовое окно,0.4,LINE,ML
+851F,Базовое окно,0.4,LINE,ML
+8520,Базовое окно,0.4,LINE,ML
+8521,Базовое окно,0.4,LINE,ML
+8522,Базовое окно,0.4,LINE,ML
+852E,Базовое окно,0.39,LWPOLYLINE,ML
+8530,Базовое окно,0.39,LWPOLYLINE,ML
+8531,Базовое окно,0.39,LWPOLYLINE,ML
+8532,Базовое окно,0.39,LWPOLYLINE,ML
+8533,Базовое окно,0.4,LINE,ML
+8534,Базовое окно,0.4,LINE,ML
+8537,Базовое окно,0.39,LWPOLYLINE,ML
+853D,Базовое окно,0.4,LINE,ML
+853E,Базовое окно,0.39,LWPOLYLINE,ML
+853F,Базовое окно,0.4,LINE,ML
+8540,Базовое окно,0.39,LWPOLYLINE,ML
+8542,Базовое окно,0.39,LWPOLYLINE,ML
+8543,Базовое окно,0.39,LWPOLYLINE,ML
+8544,Базовое окно,0.39,LWPOLYLINE,ML
+8545,Базовое окно,0.39,LWPOLYLINE,ML
+8546,Базовое окно,0.39,LWPOLYLINE,ML
+8552,Базовое окно,0.39,LWPOLYLINE,ML
+8554,Базовое окно,0.4,LINE,ML
+8556,Базовое окно,0.39,LWPOLYLINE,ML
+8557,Базовое окно,0.39,LWPOLYLINE,ML
+8558,Базовое окно,0.39,LWPOLYLINE,ML
+8559,Базовое окно,0.39,LWPOLYLINE,ML
+855A,Базовое окно,0.39,LWPOLYLINE,ML
+855B,Базовое окно,0.39,LWPOLYLINE,ML
+855D,Базовое окно,0.39,LWPOLYLINE,ML
+855F,Базовое окно,0.39,LWPOLYLINE,ML
+8560,Базовое окно,0.39,LWPOLYLINE,ML
+8561,Базовое окно,0.39,LWPOLYLINE,ML
+8562,Базовое окно,0.39,LWPOLYLINE,ML
+8563,Базовое окно,0.39,LWPOLYLINE,ML
+8564,Базовое окно,0.39,LWPOLYLINE,ML
+8565,Базовое окно,0.39,LWPOLYLINE,ML
+8566,Базовое окно,0.39,LWPOLYLINE,ML
+8567,Базовое окно,0.39,LWPOLYLINE,ML
+8569,Базовое окно,0.39,LWPOLYLINE,ML
+856A,Базовое окно,0.39,LWPOLYLINE,ML
+856B,Базовое окно,0.39,LWPOLYLINE,ML
+856C,Базовое окно,0.39,LWPOLYLINE,ML
+8571,Базовое окно,0.39,LWPOLYLINE,ML
+8572,Базовое окно,0.39,LWPOLYLINE,ML
+8573,Базовое окно,0.39,LWPOLYLINE,ML
+8574,Базовое окно,0.39,LWPOLYLINE,ML
+8575,Базовое окно,0.39,LWPOLYLINE,ML
+8576,Базовое окно,0.39,LWPOLYLINE,ML
+8577,Базовое окно,0.39,LWPOLYLINE,ML
+8578,Базовое окно,0.39,LWPOLYLINE,ML
+857E,Базовое окно,0.39,LWPOLYLINE,ML
+857F,Базовое окно,0.39,LWPOLYLINE,ML
+8580,Базовое окно,0.39,LWPOLYLINE,ML
+8581,Базовое окно,0.39,LWPOLYLINE,ML
+8582,Базовое окно,0.39,LWPOLYLINE,ML
+8583,Базовое окно,0.39,LWPOLYLINE,ML
+8584,Базовое окно,0.39,LWPOLYLINE,ML
+8585,Базовое окно,0.39,LWPOLYLINE,ML
+8586,Базовое окно,0.39,LWPOLYLINE,ML
+8587,Базовое окно,0.39,LWPOLYLINE,ML
+8588,Базовое окно,0.39,LWPOLYLINE,ML
+8589,Базовое окно,0.39,LWPOLYLINE,ML
+858A,Базовое окно,0.39,LWPOLYLINE,ML
+858B,Базовое окно,0.39,LWPOLYLINE,ML
+858C,Базовое окно,0.39,LWPOLYLINE,ML
+858D,Базовое окно,0.39,LWPOLYLINE,ML
+858E,Базовое окно,0.39,LWPOLYLINE,ML
+858F,Базовое окно,0.39,LWPOLYLINE,ML
+8590,Базовое окно,0.39,LWPOLYLINE,ML
+8591,Базовое окно,0.39,LWPOLYLINE,ML
+8592,Базовое окно,0.39,LWPOLYLINE,ML
+8593,Базовое окно,0.39,LWPOLYLINE,ML
+8594,Базовое окно,0.39,LWPOLYLINE,ML
+8595,Базовое окно,0.39,LWPOLYLINE,ML
+8596,Базовое окно,0.39,LWPOLYLINE,ML
+8597,Базовое окно,0.39,LWPOLYLINE,ML
+8598,Базовое окно,0.39,LWPOLYLINE,ML
+8599,Базовое окно,0.39,LWPOLYLINE,ML
+859A,Базовое окно,0.39,LWPOLYLINE,ML
+859B,Базовое окно,0.39,LWPOLYLINE,ML
+859C,Базовое окно,0.39,LWPOLYLINE,ML
+859D,Базовое окно,0.39,LWPOLYLINE,ML
+859E,Базовое окно,0.39,LWPOLYLINE,ML
+859F,Базовое окно,0.39,LWPOLYLINE,ML
+85A0,Базовое окно,0.39,LWPOLYLINE,ML
+85A1,Базовое окно,0.39,LWPOLYLINE,ML
+85A2,Базовое окно,0.39,LWPOLYLINE,ML
+85A3,Базовое окно,0.39,LWPOLYLINE,ML
+85A4,Базовое окно,0.39,LWPOLYLINE,ML
+85A5,Базовое окно,0.39,LWPOLYLINE,ML
+85A6,Базовое окно,0.39,LWPOLYLINE,ML
+85A7,Базовое окно,0.39,LWPOLYLINE,ML
+85A8,Базовое окно,0.39,LWPOLYLINE,ML
+85A9,Базовое окно,0.39,LWPOLYLINE,ML
+85AA,Базовое окно,0.39,LWPOLYLINE,ML
+85AB,Базовое окно,0.39,LWPOLYLINE,ML
+85AC,Базовое окно,0.39,LWPOLYLINE,ML
+85AD,Базовое окно,0.39,LWPOLYLINE,ML
+85AF,Базовое окно,0.39,LWPOLYLINE,ML
+85B6,Базовое окно,0.39,LWPOLYLINE,ML
+85B7,Базовое окно,0.395,ARC,ML
+85B8,Базовое окно,0.395,ARC,ML
+85B9,Базовое окно,0.39,LWPOLYLINE,ML
+85BA,Базовое окно,0.39,LWPOLYLINE,ML
+85BB,Базовое окно,0.4,LINE,ML
+85BC,Базовое окно,0.4,LINE,ML
+866F,Базовое окно,0.39,LWPOLYLINE,ML
+8670,Базовое окно,0.39,LWPOLYLINE,ML
+8671,Базовое окно,0.39,LWPOLYLINE,ML
+8672,Перекрытия,0.475,ARC,ML
+8673,Перекрытия,0.505,LINE,ML
+8676,Перекрытия,0.51,LINE,ML
+8677,Базовое окно,0.39,LWPOLYLINE,ML
+8678,Базовое окно,0.39,LWPOLYLINE,ML
+8679,Базовое окно,0.39,LWPOLYLINE,ML
+867A,Перекрытия,0.445,ARC,ML
+867B,Перекрытия,0.47,LINE,ML
+867C,Перекрытия,0.47,LINE,ML
+867D,Базовое окно,0.39,LWPOLYLINE,ML
+867E,Базовое окно,0.39,LWPOLYLINE,ML
+8680,Перекрытия,0.455,CIRCLE,ML
+869E,Перекрытия,0.455,CIRCLE,ML
+86A0,Перекрытия,0.455,CIRCLE,ML
+86A2,Перекрытия,0.455,CIRCLE,ML
+86A4,Перекрытия,0.455,CIRCLE,ML
+86A6,Перекрытия,0.455,CIRCLE,ML
+86A8,Перекрытия,0.455,CIRCLE,ML
+86AA,Перекрытия,0.455,CIRCLE,ML
+86AC,Перекрытия,0.455,CIRCLE,ML
+86AE,Перекрытия,0.455,CIRCLE,ML
+86B0,Перекрытия,0.455,CIRCLE,ML
+86B2,Перекрытия,0.455,CIRCLE,ML
+86B4,Перекрытия,0.455,CIRCLE,ML
+86B6,Перекрытия,0.455,CIRCLE,ML
+86B8,Перекрытия,0.455,CIRCLE,ML
+86BA,Перекрытия,0.455,CIRCLE,ML
+86BC,Перекрытия,0.455,CIRCLE,ML
+86BE,Перекрытия,0.455,CIRCLE,ML
+86C0,Перекрытия,0.455,CIRCLE,ML
+86C2,Перекрытия,0.48,CIRCLE,ML
+86C4,Перекрытия,0.48,CIRCLE,ML
+86C6,Перекрытия,0.49,CIRCLE,ML
+86C7,Базовое окно,0.39,LWPOLYLINE,ML
+86C8,Базовое окно,0.39,LWPOLYLINE,ML
+86CA,Перекрытия,0.495,CIRCLE,ML
+86CC,Перекрытия,0.51,CIRCLE,ML
+86CE,Перекрытия,0.51,CIRCLE,ML
+86D0,Перекрытия,0.51,CIRCLE,ML
+86D2,Перекрытия,0.51,CIRCLE,ML
+86D4,Перекрытия,0.51,CIRCLE,ML
+86D6,Перекрытия,0.51,CIRCLE,ML
+86D8,Перекрытия,0.51,CIRCLE,ML
+86DA,Перекрытия,0.51,CIRCLE,ML
+86DC,Перекрытия,0.51,CIRCLE,ML
+86DE,Перекрытия,0.51,CIRCLE,ML
+86E0,Перекрытия,0.51,CIRCLE,ML
+86E2,Перекрытия,0.505,CIRCLE,ML
+86E4,Перекрытия,0.505,CIRCLE,ML
+86E6,Перекрытия,0.505,CIRCLE,ML
+86E8,Перекрытия,0.505,CIRCLE,ML
+86EA,Перекрытия,0.505,CIRCLE,ML
+86EC,Перекрытия,0.505,CIRCLE,ML
+86EE,Перекрытия,0.505,CIRCLE,ML
+86F0,Перекрытия,0.505,CIRCLE,ML
+86F2,Перекрытия,0.505,CIRCLE,ML
+86F4,Перекрытия,0.505,CIRCLE,ML
+86F6,Перекрытия,0.495,CIRCLE,ML
+86F8,Перекрытия,0.495,CIRCLE,ML
+86FA,Перекрытия,0.495,CIRCLE,ML
+86FC,Перекрытия,0.495,CIRCLE,ML
+8705,Перекрытия,0.465,LINE,ML
+8706,Перекрытия,0.47,LINE,ML
+870E,Перекрытия,0.46,LINE,ML
+870F,Перекрытия,0.43,LINE,ML
+8719,Перекрытия,0.47,LINE,ML
+8723,Базовое окно,0.39,LWPOLYLINE,ML
+8724,Базовое окно,0.39,LWPOLYLINE,ML
+8725,Базовое окно,0.39,LWPOLYLINE,ML
+8726,Базовое окно,0.39,LWPOLYLINE,ML
+8727,Перекрытия,0.425,LINE,ML
+8728,Перекрытия,0.435,LINE,ML
+8789,Перекрытия,0.46,LINE,ML
+878A,Перекрытия,0.46,LINE,ML
+878B,Перекрытия,0.46,LINE,ML
+878C,Перекрытия,0.46,LINE,ML
+878D,Базовое окно,0.39,LWPOLYLINE,ML
+878E,Базовое окно,0.39,LWPOLYLINE,ML
+878F,Перекрытия,0.44,LINE,ML
+8790,Перекрытия,0.44,LINE,ML
+8791,Перекрытия,0.44,LINE,ML
+8792,Перекрытия,0.44,LINE,ML
+8793,Перекрытия,0.44,LINE,ML
+8794,Перекрытия,0.44,LINE,ML
+8795,Перекрытия,0.44,LINE,ML
+8796,Перекрытия,0.44,LINE,ML
+8797,Перекрытия,0.44,LINE,ML
+8798,Перекрытия,0.44,LINE,ML
+8799,Перекрытия,0.44,LINE,ML
+879A,Перекрытия,0.44,LINE,ML
+879B,Перекрытия,0.44,LINE,ML
+8C73,Перекрытия,0.46,LINE,ML
+8C74,Перекрытия,0.46,LINE,ML
+8C75,Перекрытия,0.435,LINE,ML
+8C76,Перекрытия,0.435,LINE,ML
+8C87,Перекрытия,0.465,LINE,ML
+8C88,Перекрытия,0.465,LINE,ML
+8C89,Перекрытия,0.465,LINE,ML
+8D65,Базовое окно,0.39,LWPOLYLINE,ML
+8D66,Базовое окно,0.39,LWPOLYLINE,ML
+8D68,Базовое окно,0.39,LWPOLYLINE,ML
+8D69,Перекрытия,0.445,LINE,ML
+8D6A,Перекрытия,0.435,LINE,ML
+8D6B,Перекрытия,0.44,LINE,ML
+8D6C,Перекрытия,0.445,LINE,ML
+8D6D,Перекрытия,0.44,ARC,ML
+8D6E,Базовое окно,0.39,LWPOLYLINE,ML
+8D6F,Перекрытия,0.445,LINE,ML
+8D70,Перекрытия,0.435,LINE,ML
+8D71,Перекрытия,0.44,ARC,ML
+8D72,Перекрытия,0.44,LINE,ML
+8D73,Перекрытия,0.445,LINE,ML
+8D74,Базовое окно,0.39,LWPOLYLINE,ML
+8D75,Базовое окно,0.39,LWPOLYLINE,ML
+8D76,Базовое окно,0.39,LWPOLYLINE,ML
+8D77,Базовое окно,0.39,LWPOLYLINE,ML
+8D78,Базовое окно,0.39,LWPOLYLINE,ML
+8D79,Перекрытия,0.425,LINE,ML
+8D7A,Перекрытия,0.43,LINE,ML
+8D7B,Перекрытия,0.425,ARC,ML
+8D7C,Перекрытия,0.43,LINE,ML
+8D7D,Перекрытия,0.42,LINE,ML
+91E9,Перекрытия,0.46,LINE,ML
+91EA,Перекрытия,0.46,LINE,ML
+952A,Базовое окно,0.39,LWPOLYLINE,ML
+952B,Базовое окно,0.39,LWPOLYLINE,ML
+952C,Перекрытия,0.47,LINE,ML
+A652,Базовое окно,0.39,LWPOLYLINE,ML
+A653,Базовое окно,0.39,LWPOLYLINE,ML
+A654,Базовое окно,0.39,LWPOLYLINE,ML
+A655,Базовое окно,0.39,LWPOLYLINE,ML
+A658,Базовое окно,0.39,LWPOLYLINE,ML
+A659,Базовое окно,0.39,LWPOLYLINE,ML
+A65A,Базовое окно,0.39,LWPOLYLINE,ML
+A65B,Базовое окно,0.39,LWPOLYLINE,ML

@@ -1,0 +1,60 @@
+{
+  "accuracy": 1.0,
+  "n_test_samples": 35,
+  "n_classes": 5,
+  "classes": [
+    "Базовая дверь",
+    "Базовое окно",
+    "Перекрытия",
+    "Потолки",
+    "Стены"
+  ],
+  "test_csv": "C:\\Users\\Acer\\Desktop\\Севкав\\Generation3DFrom2DLib_06\\data\\processed\\ml\\test_features.csv",
+  "model_path": "C:\\Users\\Acer\\Desktop\\Севкав\\Generation3DFrom2DLib_06\\data\\processed\\models\\ml_model.pkl",
+  "report": {
+    "Базовая дверь": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 11.0
+    },
+    "Базовое окно": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 11.0
+    },
+    "Перекрытия": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "Потолки": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "Стены": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 35.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 35.0
+    }
+  },
+  "model_type": "ml"
+}

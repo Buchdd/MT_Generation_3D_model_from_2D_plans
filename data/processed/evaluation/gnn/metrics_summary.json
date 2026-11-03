@@ -1,0 +1,49 @@
+{
+  "accuracy": 1.0,
+  "n_samples": 5,
+  "report": {
+    "\u0411\u0430\u0437\u043e\u0432\u0430\u044f \u0434\u0432\u0435\u0440\u044c": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "\u0411\u0430\u0437\u043e\u0432\u043e\u0435 \u043e\u043a\u043d\u043e": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "\u041f\u0435\u0440\u0435\u043a\u0440\u044b\u0442\u0438\u044f": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "\u041f\u043e\u0442\u043e\u043b\u043a\u0438": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "\u0421\u0442\u0435\u043d\u044b": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    }
+  }
+}

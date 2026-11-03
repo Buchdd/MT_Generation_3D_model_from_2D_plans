@@ -1,0 +1,62 @@
+{
+  "Uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "IsCustomNode": false,
+  "Description": "Генерация 3D элементов Revit из JSON команд пайплайна парсинга DXF",
+  "Name": "GenerateRevit",
+  "ElementResolver": { "ResolutionMap": {} },
+  "Inputs": [], "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# GenerateRevit.dyn\n# Читает JSON из папки revit_commands и создаёт элементы в Revit\n# IN[0]: путь к папке с JSON файлами\n# IN[1]: имя уровня (default: 'Level 1')\n\nimport clr, os, json, math\nclr.AddReference('RevitAPI')\nclr.AddReference('RevitAPIUI')\nclr.AddReference('RevitServices')\n\nfrom Autodesk.Revit.DB import *\nfrom Autodesk.Revit.DB.Structure import StructuralType\nfrom RevitServices.Persistence import DocumentManager\nfrom RevitServices.Transactions import TransactionManager\n\ndoc   = DocumentManager.Instance.CurrentDBDocument\nuidoc = DocumentManager.Instance.CurrentUIApplication.ActiveUIDocument\n\n# --- Входные данные ---\njson_folder = str(IN[0]) if IN[0] else ''\nlevel_name  = str(IN[1]) if len(IN) > 1 and IN[1] else 'Level 1'\n\nif not os.path.isdir(json_folder):\n    OUT = f'ERROR: Папка не найдена: {json_folder}'\n    raise Exception(OUT)\n\njson_files = [f for f in os.listdir(json_folder)\n              if f.endswith('_revit_commands.json')]\nif not json_files:\n    OUT = f'ERROR: JSON файлы не найдены в {json_folder}'\n    raise Exception(OUT)\n\n# --- Вспомогательные функции ---\n\ndef get_level(name):\n    levels = FilteredElementCollector(doc).OfClass(Level).ToElements()\n    for lvl in levels:\n        if lvl.Name == name:\n            return lvl\n    return list(levels)[0] if levels else None\n\n\ndef find_wall_type(thickness_ft):\n    \"\"\"Ищет тип стены ближайший по толщине.\"\"\"\n    collector = FilteredElementCollector(doc).OfClass(WallType).ToElements()\n    best, best_diff = None, float('inf')\n    for wt in collector:\n        try:\n            t = wt.get_Parameter(BuiltInParameter.WALL_ATTR_WIDTH_PARAM)\n            if t:\n                diff = abs(t.AsDouble() - thickness_ft)\n                if diff < best_diff:\n                    best_diff = diff\n                    best = wt\n        except:\n            pass\n    return best\n\n\ndef find_family_symbol(category_bic):\n    \"\"\"Ищет первый активный FamilySymbol нужной категории.\"\"\"\n    collector = (FilteredElementCollector(doc)\n                 .OfClass(FamilySymbol)\n                 .OfCategory(category_bic)\n                 .ToElements())\n    for sym in collector:\n        if sym and sym.IsActive:\n            return sym\n    for sym in collector:\n        if sym:\n            sym.Activate()\n            doc.Regenerate()\n            return sym\n    return None\n\n\ndef xyz(pt):\n    if pt is None or len(pt) < 2:\n        return XYZ(0, 0, 0)\n    return XYZ(pt[0], pt[1], pt[2] if len(pt) > 2 else 0.0)\n\n\ndef make_wall(cmd, level):\n    geom   = cmd['geometry']\n    params = cmd.get('params', {})\n    start  = geom['start']\n    end    = geom['end']\n\n    dx = end[0] - start[0]\n    dy = end[1] - start[1]\n    if math.sqrt(dx*dx + dy*dy) < 0.01:  # короче 0.01 фута = 3мм\n        return None\n\n    line   = Line.CreateBound(xyz(start), xyz(end))\n    height = params.get('height_ft', 9.84252)  # 3м в футах\n    thick  = params.get('thickness_ft', 0.65617)  # 200мм в футах\n\n    # Ищем подходящий тип стены\n    wall_type = find_wall_type(thick)\n\n    if wall_type:\n        wall = Wall.Create(doc, line, wall_type.Id, level.Id, height, 0.0, False, False)\n    else:\n        wall = Wall.Create(doc, line, level.Id, False)\n        # Устанавливаем высоту\n        try:\n            p = wall.get_Parameter(BuiltInParameter.WALL_USER_HEIGHT_PARAM)\n            if p and not p.IsReadOnly:\n                p.Set(height)\n        except:\n            pass\n\n    return wall\n\n\ndef make_door(cmd, level):\n    geom    = cmd['geometry']\n    pos     = geom['position']\n    sym     = find_family_symbol(BuiltInCategory.OST_Doors)\n    if sym is None:\n        return None\n    try:\n        inst = doc.Create.NewFamilyInstance(\n            xyz(pos), sym, level, StructuralType.NonStructural\n        )\n        # Поворот\n        rot = geom.get('rotation', 0.0)\n        if rot and abs(rot) > 0.01:\n            axis  = Line.CreateUnbound(xyz(pos), XYZ.BasisZ)\n            angle = rot * math.pi / 180.0\n            ElementTransformUtils.RotateElement(doc, inst.Id, axis, angle)\n        return inst\n    except:\n        return None\n\n\ndef make_window(cmd, level):\n    geom = cmd['geometry']\n    pos  = geom['position']\n    sym  = find_family_symbol(BuiltInCategory.OST_Windows)\n    if sym is None:\n        return None\n    try:\n        inst = doc.Create.NewFamilyInstance(\n            xyz(pos), sym, level, StructuralType.NonStructural\n        )\n        rot = geom.get('rotation', 0.0)\n        if rot and abs(rot) > 0.01:\n            axis  = Line.CreateUnbound(xyz(pos), XYZ.BasisZ)\n            angle = rot * math.pi / 180.0\n            ElementTransformUtils.RotateElement(doc, inst.Id, axis, angle)\n        return inst\n    except:\n        return None\n\n\ndef make_stair_placeholder(cmd, level):\n    \"\"\"Лестница пока как Generic Model по bbox.\"\"\"\n    geom = cmd['geometry']\n    pts  = geom.get('points', [])\n    if len(pts) < 2:\n        return None\n    sym = find_family_symbol(BuiltInCategory.OST_GenericModel)\n    if sym is None:\n        return None\n    # Центр bbox как точка вставки\n    bbox = geom.get('bbox', {})\n    cx = (bbox.get('min_x', 0) + bbox.get('max_x', 0)) / 2\n    cy = (bbox.get('min_y', 0) + bbox.get('max_y', 0)) / 2\n    try:\n        return doc.Create.NewFamilyInstance(\n            XYZ(cx, cy, 0), sym, level, StructuralType.NonStructural\n        )\n    except:\n        return None\n\n\n# --- Основной цикл ---\n\nlevel = get_level(level_name)\nif level is None:\n    OUT = f'ERROR: Уровень \"{level_name}\" не найден'\n    raise Exception(OUT)\n\nresults  = []\nerrors   = []\nplaced   = 0\nskipped  = 0\n\nTransactionManager.Instance.EnsureInTransaction(doc)\n\nfor json_file in json_files:\n    path = os.path.join(json_folder, json_file)\n    try:\n        with open(path, 'r', encoding='utf-8') as f:\n            data = json.load(f)\n    except Exception as e:\n        errors.append(f'Ошибка чтения {json_file}: {e}')\n        continue\n\n    commands    = data.get('commands', [])\n    file_ok     = 0\n    file_skip   = 0\n\n    for cmd in commands:\n        try:\n            method  = cmd.get('method')\n            element = None\n\n            if method == 'wall':\n                element = make_wall(cmd, level)\n            elif method == 'door':\n                element = make_door(cmd, level)\n            elif method == 'window':\n                element = make_window(cmd, level)\n            elif method == 'stair':\n                element = make_stair_placeholder(cmd, level)\n\n            if element is not None:\n                file_ok += 1\n            else:\n                file_skip += 1\n\n        except Exception as e:\n            errors.append(f\"{cmd.get('id','?')}: {e}\")\n            file_skip += 1\n\n    placed  += file_ok\n    skipped += file_skip\n    results.append(f'{json_file}: OK={file_ok} SKIP={file_skip}')\n\nTransactionManager.Instance.TransactionTaskDone()\n\n# --- Итог ---\nlines = [\n    '=== GenerateRevit завершён ===',\n    f'Уровень:          {level_name}',\n    f'Файлов:           {len(json_files)}',\n    f'Размещено:        {placed}',\n    f'Пропущено:        {skipped}',\n    '',\n] + results\n\nif errors:\n    lines += ['', '--- Ошибки (первые 20) ---'] + errors[:20]\n\nOUT = chr(10).join(lines)\n",
+      "Id": "python_main",
+      "Inputs": [
+        {"Id":"in0","Name":"IN[0]","Description":"Путь к папке revit_commands","UsingDefaultValue":false,"Level":2,"UseLevels":false,"KeepListStructure":false},
+        {"Id":"in1","Name":"IN[1]","Description":"Имя уровня (Level 1)","UsingDefaultValue":true,"DefaultValue":"Level 1","Level":2,"UseLevels":false,"KeepListStructure":false}
+      ],
+      "Outputs": [{"Id":"out0","Name":"OUT","Description":"Результат","UsingDefaultValue":false,"Level":2,"UseLevels":false,"KeepListStructure":false}],
+      "Replication": "Disabled",
+      "Description": "Размещение элементов из JSON"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// Путь к папке revit_commands\n// Измени на свой путь\nr\"C:\\Users\\Acer\\Desktop\\Севкав\\Generation3DFrom2DLib_06\\data\\processed\\revit_commands\";",
+      "Id": "path_input",
+      "Inputs": [],
+      "Outputs": [{"Id":"out0","Name":"","Description":"","UsingDefaultValue":false,"Level":2,"UseLevels":false,"KeepListStructure":false}],
+      "Replication": "Disabled",
+      "Description": "Путь к JSON папке"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Level 1\";",
+      "Id": "level_input",
+      "Inputs": [],
+      "Outputs": [{"Id":"out0","Name":"","Description":"","UsingDefaultValue":false,"Level":2,"UseLevels":false,"KeepListStructure":false}],
+      "Replication": "Disabled",
+      "Description": "Имя уровня в Revit"
+    }
+  ],
+  "Connectors": [
+    {"Start":"path_input","End":"python_main","StartIndex":0,"EndIndex":0},
+    {"Start":"level_input","End":"python_main","StartIndex":0,"EndIndex":1}
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {"ScaleFactorLog":0,"HasRunWithoutCrash":false,"IsVisibleInDynamoLibrary":true,"Version":"2.16.0","RunType":"Manual","RunPeriod":"1000"},
+    "Camera": {"Name":"Background Preview","EyeX":-17,"EyeY":24,"EyeZ":22,"LookX":12,"LookY":-13,"LookZ":-58,"UpX":0,"UpY":1,"UpZ":0},
+    "ConnectorPins": [],
+    "NodeViews": [
+      {"Name":"Python Script","ShowGeometry":true,"Id":"python_main","IsSetAsInput":false,"IsSetAsOutput":false,"Excluded":false,"X":500,"Y":200},
+      {"Name":"Путь к revit_commands","ShowGeometry":true,"Id":"path_input","IsSetAsInput":true,"IsSetAsOutput":false,"Excluded":false,"X":50,"Y":150},
+      {"Name":"Имя уровня","ShowGeometry":true,"Id":"level_input","IsSetAsInput":true,"IsSetAsOutput":false,"Excluded":false,"X":50,"Y":280}
+    ],
+    "Annotations": [],
+    "X":0,"Y":0,"Zoom":1.0
+  }
+}

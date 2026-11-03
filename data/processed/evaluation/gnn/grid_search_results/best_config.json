@@ -1,0 +1,8 @@
+{
+  "hidden_channels": 32,
+  "num_layers": 3,
+  "lr": 0.01,
+  "val_acc_mean": 0.3931240657698057,
+  "val_acc_std": 0.0,
+  "n_parameters": 4150
+}
